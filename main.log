@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  19 OCT 2026 08:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  19 OCT 2026 09:17
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**/home/gatze/University/Mitschriften/main.tex
+(/home/gatze/University/Mitschriften/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -545,7 +546,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 	\newpage
+l.60 	\newpage
                [1{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
 er-ts1.enc}] [2] [3] [4] [5] (./main.aux)
  ***********
@@ -556,13 +557,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E372E9BD8664CD46C08D578DFFF5B253;853.
  ) 
 Here is how much of TeX's memory you used:
- 18133 strings out of 467363
- 372423 string characters out of 5419000
+ 18134 strings out of 467363
+ 372529 string characters out of 5419000
  805897 words of memory out of 6000000
  47018 multiletter control sequences out of 15000+600000
  641523 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,19n,121p,541b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,19n,121p,577b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
@@ -572,7 +573,7 @@ fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm
 -super/sfrm2074.pfb>
-Output written on main.pdf (6 pages, 127184 bytes).
+Output written on main.pdf (6 pages, 128743 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
