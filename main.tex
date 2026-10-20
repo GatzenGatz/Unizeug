@@ -4,30 +4,62 @@
 \usepackage{inputenc}
 \usepackage[T1]{fontenc}
 
-\usepackage{amsmath, amssymb, physics, siunitx, amsthm}
+\usepackage{amsmath, amssymb, physics, siunitx, wasysym, amsthm}
 
-\usepackage[left=4cm, right=3cm, head=18pt, top=2cm, bottom=2cm,includefoot=true]{geometry}
+\usepackage[left=2cm, right=2cm, head=18pt, top=2cm, bottom=2cm,includefoot=true]{geometry}
 
 \usepackage{hyperref}
 \usepackage{scrlayer-scrpage}
 \usepackage{setspace}
 \usepackage{changepage}
 
+\setlength{\parindent}{0pt}
+
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{definition*}{Definition}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Satz}[subsection]
+\newtheorem{lemma}{Lemma}
+\counterwithin{lemma}{theorem} 
+
+\newcommand{\note}[1]{\textcolor{red}{\textbf{(#1)}}}
+
+\ofoot{\pagemark}
+\ohead{}
+
+
+
 \title{Mitschriften}
 \author{Maurice-León Schwinger}
 \date{}
 
 \begin{document}
-	\thispagestyle{empty}
-	\maketitle
+	{
+    \maketitle
+    \thispagestyle{empty}     
+    \pagestyle{empty}     
 	\tableofcontents
+	\section*{Anmerkungen}
+	Dieses Dokument wird die vollständige Sammlung . Wie leicht auffällt ist dieses Dokument in \LaTeX geschrieben. Darum und weil ich unfassbar faul bin, werde ich darauf verzichten, wenn auch bestimmt wunderschöne, Tikz-Abbildungen zu verwenden.
+	Im Folgenden werde ich \note{Notizen} wie zu sehen schreiben.
+    \thispagestyle{empty}
+    \clearpage
+}
+
 	\newpage
 	\setcounter{page}{1}
 	\section{Lineare Algebra}
 	\subsection{Grundlagen der Mathematik}
+	\subsubsection{Aussagenlogik}
+	\begin{definition}
+		Eine Aussage ist eine endliche Zeichenfolge, der genau ein Wahrheitswert, wahr oder falsch, zugeordnet ist.
+	\end{definition}
 
-	Aussagenlogik
-	Eine Definition ist eine endliche Zeichenfolge, der genau ein Wahrheitswert, wahr oder falsch, zugeordnet ist.\\
 	Zwei Aussagen $p$ (Hypothese) und $q$ (Konklusion) können wie folgt zu neuen Aussagen verknüpft werden:
 	\begin{itemize}
 		\item Konjunktion: $p \land q$ (min)
@@ -36,34 +68,26 @@
 		\item Implikation: $p \implies q$
 		\item Äquivalenz: $p \iff q$
 	\end{itemize}
-
-
-	Prädikatenlogik
+	\paragraph{Prädikatenlogik}
 	Ein Prädikat ordnet jedem Element $x$ aus einem Universum $X$ eine Aussage $P(x)$ zu.
-	funktioniert wie Aussage
-
-	Quantoren:
+	\note{funktioniert wie Aussage}
+	
+	\paragraph{Quantoren}
 	\begin{itemize}
 	\item Allquantor $\forall x \in X$
 	\item Existenzquantor $\exists x \in X$
 	\end{itemize}
 	
-	Nützliche Rechenregeln
-
-	Mengentheoretische Grundlagen
-
+	\subsubsection{Mengentheoretische Grundlagen}
 	Mengen bestehen aus Elementen ($x \in  M$)
-
-	Naive Definition nach Cantor: Menge Zusammenschluss von bestimmten, wohlunterscheidbaren Objekten zu einem Ganzen. 	
-
-	Leere Menge $\emptyset$
-
+	\begin{definition*}
+			Naive Definition nach Cantor: Menge Zusammenschluss von bestimmten, wohlunterscheidbaren Objekten zu einem Ganzen.
+	\end{definition*}
+	Leere Menge $\emptyset$\\
 	Beschreibung von Mengen durch Eigenschaften $A:=\{x \in B| P(x)\}$
 
-	Mengentheoretische Bezeichnungen und Operationen
-
-	Seien A und B Mengen.
-
+	\paragraph{Mengentheoretische Bezeichnungen und Operationen}
+	Seien A und B Mengen:
 	\begin{itemize}
 	\item Enthaltenseinsbeziehung (Inklusion):\\ A heißt Teilmenge von B ($A \subseteq B$), falls jedes Element von A auch Element von B ist. 
 	\item Gleichheit ($A = B$):\\
@@ -77,20 +101,101 @@
 	\item Symmetrische Differenz: $A \bigtriangleup B := (A \cup B)\setminus (A\cap B)$
 	\item Potenzmenge von A: $\mathcal{P}(A) := \{C|C\subset A\}$
 	\item Kartesisches Produkt: $A \times B := {(a,b)| a\in A, b\in B}$ (Tupel)
-
 	\end{itemize}
 
 	Kardinalität: $|A|$ Anzahl Elemente einer (endlichen) Menge
-
-	Russelsches Paradoxon
-
 	
+	\subsubsection{Zermelo-Fraenkel-Axiomatik}
+	\paragraph{Russelsches Paradoxon}
+	$M:= \{x|x\not\in x\}$ $x=M$\lightning{}
+	\paragraph{Konstruktiver Aufbau der Mengenlehre}
+	\begin{enumerate}
+	\item Leermengenaxiom: Es gibt eine leere Menge.
+	\item Extensionalitätsaxiom: Zwei Mengen sind genau dann gleich, wenn sie dieselben Elemente beinhalten.
+	\item Paarmengenaxiom: Für je zwei Mengen A und B existiert eine Menge $\{A, B\}$, die genau A und B als Elemente besitzt.
+	\item Vereinigungsaxiom: Für jede Menge A existiert eine Menge, deren ELemente genau die Elemente der Elemente von A sind. (Bsp. Menge enthält Mengen)
+	\item Unendlichkeitsaxiom: Es gibt eine Menge A, die die leere Menge und für jedes $x \in A$ auch die Menge $x \cup {x}$ als Element enthält.
+	\item Potenzmengenaxiom: Für jede Menge A existiert eine Menge, deren Elemente genau die Teilmengen von A sind.
+	\item Fundierungsaxiom: Jede nichtleere Menge A enthält ein Element $B \in A$ derart, dass $A \cap B = \emptyset$. \note{Mengen enthalten sich nicht selbst als Element: $A=\{M\}$}
+	\item Informell: Bilder von Mengen unter definierbaren Funktionen sind selbst wieder Mengen.
+	\end{enumerate}
+
+	\subsubsection{Konstruktion der natürlichen Zahlen}
+	\begin{definition}
+		\begin{align*}
+		0:=\emptyset,\quad n^+:=n\cup {n}={0,\dots,n}
+	\end{align*}	
+	In ZF ist Definition $\mathbb{N}:={0,1,2,\dots}$ zulässig.
+	\end{definition}
+	Für alle $m,n \in \mathbb{N}$,
+	\begin{align*}
+		m < n \iff m \subset n \iff m \in n
+	\end{align*}
+	\paragraph{Addition} rekursiv definiert $\forall m,n \in \mathbb{N}$:
+	\begin{align*}
+		m+0 &:= m\\
+		m+n^+&:=(m+n)^+
+	\end{align*}
+	\paragraph{Multiplikation} ebenfalls rekursiv definiert $\forall m,n \in \mathbb{N}$:
+	\begin{align*}
+		m\cdot0 &:= 0\\
+		m\cdot n^+&:=(m\cdot n)+n
+	\end{align*}
+	\subsubsection{Relationen}
+	\begin{definition}
+		Eine Relation zwischen zwei Mengen A und B ist eine Teilmenge $R\subseteq A\times B$.
+	\end{definition}
+	Schreibweise: statt $(a,b) \in R$ auch $aRb$ (Infix-Notation)\\
+	Inverse Relation $R^{-1}\subseteq B \times A$ zu einer Relation $R\subseteq A \times B$ ist definiert als
+	\begin{align*}
+		R^{-1} := \{(b,a)|(a,b)\in R\}
+	\end{align*}
+	Visualisierung durch Grpahen, etc.\\
+	Speziallfall $R\subseteq A\times A$ heißt binäre Relation auf A.\\
+	Wichtige Eigenschaften:
+	\begin{itemize}
+		\item reflexiv: $\forall a \in A: (a,a)\in R$
+		\item symmetrisch: $\forall a,b \in A: (a,b)\in R \implies (b,a) \in R$
+		\item antisymmetrisch: $\forall a,b \in A: ((a,b) \in R \land (b,a)\in R) \implies a=b$
+		\item transitiv: $\forall a,b,c \in A: ((a,b)\in R \land (b,c) \in R)\implies (a,c)\in R$ 
+	\end{itemize}
+	\note{Bsp.: Teilerrelation, $\leq$-Relation auf $\mathbb{N}$, Diagonalrelation, Allrelation} %TODO
+	\subsubsection{Äquivalenzrelation}
+	\begin{definition}
+			Sei A Menge, Eine Relation $R\subseteq A\times A$ heißt Äquivalenzrelation auf A, falls R reflexiv, symmetrisch, transitiv ist.\\
+	\end{definition}
+	Für $x \in A$ heißt $[x]_R:=\{y\in A| xRy\}$ die Äquivalenzklasse von $x$ bzgl. R. Die Menge $A/R:=\{[x]_R|x\in A\}$ aller Äquivalenzklassen bzgl. R wird als Faktormenge von A nach R \note{modulo} bezeichnet.
+	\begin{theorem}
+		Sei R Äquivalenzrelation auf einer Menge A. Dann gilt:
+		\begin{align*}
+			\forall x,y \in A: (x,y) \in R \iff [x]_R=[y]_R
+		\end{align*}
+	\end{theorem}
+	Beweis:
+	\begin{align*}
+		\forall x,y \in A: (x,y) \in \mathbb{R} \implies [y]_R=[x]_R \quad \text(*)
+	\end{align*}
+	Sei $(x,y)\in R$. Sei $z\in [y]_R$, d.h. $(y,z) \in R$. Wegen Transitivität von R: $(x,y)\in R \land (y,z)\in R \implies (x,z) \in R$. Somit $z\in [x]_R$. Somit (*) bewiesen.\\
+	Sei $(x,y)\in R$. Wegen (*) ist $[y]_R \subseteq [x]_R$. Wegen Symmetrie von R und $(x,y)\in R$ ist auch $(y,x)\in R$, damit nach (*) auch $[x]_R\subseteq [y]_R$. Also $[x]_R=[y]_R$.
+	Seien $x,y \in A$ mit $[x]_R =[y]_R$. Wegen Reflexivität von R ist $(y,y) \in R$, d. h. $y \in [y]_R$. Daher $y\in [x]_R$ (nach Vorraussetzung), also $(x,y) \in R$. $\Box$
+	\subsubsection{Partitionen}	
+	\begin{definition}
+			Sei A eine Menge. Eine Partition von A ist eine Menge $\mathcal{C}$ von nicht-leeren Teilmengen von A derart, dass
+			\begin{enumerate}
+				\item $A=\bigcup \mathcal{C}$, also alle Elemente von A in den Teilmengen
+				\item $\forall B,C \in \mathcal{C}: B \neq C \implies B \cap C = \emptyset$, also Teilmengen disjunkt
+			\end{enumerate}
+	\end{definition}
+	\note{bissl wie Partitionen bei Rechnern}
+
+
+
 	\newpage
 	\section{Analysis}
 	
 	\newpage
 	\section{Grundlagen der Informatik}
-
+	
 	\newpage
 	\section{Technische Mechanik}
 
