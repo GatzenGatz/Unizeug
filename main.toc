@@ -13,9 +13,15 @@
 \contentsline {paragraph}{Addition}{2}{section*.8}%
 \contentsline {paragraph}{Multiplikation}{3}{section*.9}%
 \contentsline {subsubsection}{\numberline {1.1.5}Relationen}{3}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Äquivalenzrelation}{3}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}Partitionen}{4}{subsubsection.1.1.7}%
-\contentsline {section}{\numberline {2}Analysis}{5}{section.2}%
-\contentsline {section}{\numberline {3}Grundlagen der Informatik}{6}{section.3}%
-\contentsline {section}{\numberline {4}Technische Mechanik}{7}{section.4}%
-\contentsline {section}{\numberline {5}Eingebettete Systeme}{8}{section.5}%
+\contentsline {paragraph}{Äquivalenzrelation}{3}{section*.10}%
+\contentsline {paragraph}{Partitionen}{4}{section*.11}%
+\contentsline {subsubsection}{\numberline {1.1.6}Abbildung (Funktion)}{4}{subsubsection.1.1.6}%
+\contentsline {paragraph}{Spezielle Eigenschaften von Abbildungen}{4}{section*.12}%
+\contentsline {paragraph}{Weitere Bezeichnungen}{5}{section*.13}%
+\contentsline {paragraph}{Komposition von Abbildungen}{5}{section*.14}%
+\contentsline {paragraph}{Umkehrabbildungen}{6}{section*.15}%
+\contentsline {subsubsection}{\numberline {1.1.7}Gleichmächtigkeit}{6}{subsubsection.1.1.7}%
+\contentsline {section}{\numberline {2}Analysis}{7}{section.2}%
+\contentsline {section}{\numberline {3}Grundlagen der Informatik}{8}{section.3}%
+\contentsline {section}{\numberline {4}Technische Mechanik}{9}{section.4}%
+\contentsline {section}{\numberline {5}Eingebettete Systeme}{10}{section.5}%
