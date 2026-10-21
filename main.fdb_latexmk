@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1792579577.71307 "/home/gatze/University/Mitschriften/main.tex" "main.pdf" "main" 1792579579.67645 0
-  "/home/gatze/University/Mitschriften/main.tex" 1792579577.10837 12852 3e5dcf0529650a0ce0187b4536a07a5a ""
+["pdflatex"] 1792579803.6728 "/home/gatze/University/Mitschriften/main.tex" "main.pdf" "main" 1792579805.68315 0
+  "/home/gatze/University/Mitschriften/main.tex" 1792579800.93794 12852 d8d5afd562864db5c82258a24ca5d53b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -131,10 +131,10 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790271676 5572510 7dd3ae02b70ced0e931c03f1b6376052 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1791808451 3520300 2df3328010af8c35bf9f8f147bd215d1 ""
-  "main.aux" 1792579579.50986 3374 705342738e674f4150bd15f7f4c48ec3 "pdflatex"
-  "main.out" 1792579579.51186 2103 10272296c36ff79493187da01aac0a1b "pdflatex"
-  "main.tex" 1792579577.10837 12852 3e5dcf0529650a0ce0187b4536a07a5a ""
-  "main.toc" 1792579579.51186 2037 71802be0e4e804e532ffccb9d2cb4ed5 "pdflatex"
+  "main.aux" 1792579805.50696 3374 705342738e674f4150bd15f7f4c48ec3 "pdflatex"
+  "main.out" 1792579805.50796 2103 10272296c36ff79493187da01aac0a1b "pdflatex"
+  "main.tex" 1792579800.93794 12852 d8d5afd562864db5c82258a24ca5d53b ""
+  "main.toc" 1792579805.51013 2037 71802be0e4e804e532ffccb9d2cb4ed5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
