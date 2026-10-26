@@ -1,0 +1,79 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{notestyle}
+
+% language
+\RequirePackage[ngerman]{babel}
+\RequirePackage[T1]{fontenc}
+
+% math stuff
+\RequirePackage{amsmath, amssymb, physics, siunitx, wasysym, amsthm}
+
+% layout
+\RequirePackage[left=2cm, right=2cm, head=18pt, top=2cm, bottom=2cm,includefoot=true]{geometry}
+\RequirePackage{setspace}
+\RequirePackage{changepage}
+\RequirePackage{enumitem}
+
+\RequirePackage{scrlayer-scrpage}
+\clearscrheadfoot
+\ofoot{\pagemark}
+\ohead{}
+
+\setlength{\parindent}{0pt}
+
+\RequirePackage{xcolor}
+
+% commands and environments
+\newenvironment{enumerateroman}{\begin{enumerate}[label=(\upshape\roman*)]}{\end{enumerate}}
+\newcommand{\note}[1]{\textcolor{red}{\textbf{(#1)}}}
+\newcommand{\prove}{\paragraph{Beweis}}
+
+% amsthm-environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example}{Beispiel}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Satz}[section]
+\newtheorem{lemma}{Lemma}
+\counterwithin{lemma}{theorem} 
+
+% colorboxes
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+
+% Hier definieren wir die 4 Grundfarben kurz und knackig
+\definecolor{myBlue}{RGB}{41,128,185}
+\definecolor{myRed}{RGB}{192,57,43}
+\definecolor{myOrange}{RGB}{230,126,34}
+\definecolor{myGreen}{RGB}{39,174,96}
+
+\tcolorboxenvironment{definition}{
+    enhanced, breakable, arc=2mm, boxrule=0.8pt, before skip=10pt, after skip=10pt,
+    colframe=myBlue, colback=myBlue!7!white
+}
+\tcolorboxenvironment{definition*}{
+    enhanced, breakable, arc=2mm, boxrule=0.8pt, before skip=10pt, after skip=10pt,
+    colframe=myBlue, colback=myBlue!7!white
+}
+\tcolorboxenvironment{theorem}{
+    enhanced, breakable, arc=2mm, boxrule=0.8pt, before skip=10pt, after skip=10pt,
+    colframe=myRed, colback=myRed!7!white
+}
+\tcolorboxenvironment{lemma}{
+    enhanced, breakable, arc=1.5mm, boxrule=0.6pt, before skip=8pt, after skip=8pt,
+    colframe=myOrange, colback=myOrange!7!white
+}
+\tcolorboxenvironment{example}{
+    enhanced, breakable, sharp corners, frame hidden, boxrule=0mm, before skip=10pt, after skip=10pt,
+    borderline west={3pt}{0pt}{myGreen}, colback=myGreen!7!white
+}
+
+
+
+
+% hyperref because changes things
+\RequirePackage{hyperref}
+
+\endinput

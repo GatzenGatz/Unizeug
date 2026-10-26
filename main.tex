@@ -1,42 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 
-\usepackage[ngerman]{babel}
-\usepackage{inputenc}
-\usepackage[T1]{fontenc}
-
-\usepackage{amsmath, amssymb, physics, siunitx, wasysym, amsthm}
-
-\usepackage[left=2cm, right=2cm, head=18pt, top=2cm, bottom=2cm,includefoot=true]{geometry}
-
-\usepackage{hyperref}
-\usepackage{scrlayer-scrpage}
-\usepackage{setspace}
-\usepackage{changepage}
-
-\setlength{\parindent}{0pt}
-
-\usepackage{xcolor}
-
-\usepackage{enumitem}
-
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-\newtheorem*{definition*}{Definition}
-
-
-\theoremstyle{plain}
-\newtheorem{theorem}{Satz}[section]
-\newtheorem{lemma}{Lemma}
-\counterwithin{lemma}{theorem} 
-
-\theoremstyle{remark}
-\newtheorem*{example}{\textbf{Beispiel}}
-
-\newcommand{\note}[1]{\textcolor{red}{\textbf{(#1)}}}
-
-\ofoot{\pagemark}
-\ohead{}
-
+\usepackage{notestyle}
 
 
 \title{Mitschriften}
@@ -93,17 +57,17 @@
 	\paragraph{Mengentheoretische Bezeichnungen und Operationen}
 	Seien $A$ und $B$ Mengen:
 	\begin{itemize}
-	\item Enthaltenseinsbeziehung (Inklusion):\\ $A$ heißt Teilmenge von B ($A \subseteq B$), falls jedes Element von $A$ auch Element von B ist.
+	\item Enthaltenseinsbeziehung (Inklusion):\\ $A$ heißt Teilmenge von $B$ ($A \subseteq B$), falls jedes Element von $A$ auch Element von $B$ ist.
 	\item echte Teilmenge $A \neq B \land A \subseteq B:A \subset B$ 
 	\item Gleichheit ($A = B$):
 		 $A\subseteq B \land B \subseteq A$
 	\item Schnitt $A \cap B$\\
-	A und B disjunkt: $A \cap B = \emptyset$
+	$A$ und $B$ disjunkt: $A \cap B = \emptyset$
 	
 	\item Vereinigung $A \cup B$
 	\item Differenz	$A \setminus B$
 	\item Symmetrische Differenz: $A \bigtriangleup B := (A \cup B)\setminus (A\cap B)$
-	\item Potenzmenge von A: $\mathcal{P}(A) := \{C\mid C\subset A\}$
+	\item Potenzmenge von $A$: $\mathcal{P}(A) := \{C\mid C\subset A\}$
 	\item Kartesisches Produkt: $A \times B := {(a,b)\mid a\in A, b\in B}$ (Tupel)
 	\end{itemize}
 
@@ -116,10 +80,10 @@
 	\begin{enumerate}
 	\item Leermengenaxiom: Es gibt eine leere Menge.
 	\item Extensionalitätsaxiom: Zwei Mengen sind genau dann gleich, wenn sie dieselben Elemente beinhalten.
-	\item Paarmengenaxiom: Für je zwei Mengen $A$ und $B$ existiert eine Menge $\{A, B\}$, die genau A und B als Elemente besitzt.
-	\item Vereinigungsaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Elemente der Elemente von A sind. (Bsp. Menge enthält Mengen)
+	\item Paarmengenaxiom: Für je zwei Mengen $A$ und $B$ existiert eine Menge $\{A, B\}$, die genau $A$ und $B$ als Elemente besitzt.
+	\item Vereinigungsaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Elemente der Elemente von $A$ sind. (Bsp. Menge enthält Mengen)
 	\item Unendlichkeitsaxiom: Es gibt eine Menge $A$, die die leere Menge und für jedes $x \in A$ auch die Menge $x \cup \{x\}$ als Element enthält.
-	\item Potenzmengenaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Teilmengen von A sind.
+	\item Potenzmengenaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Teilmengen von $A$ sind.
 	\item Fundierungsaxiom: Jede nichtleere Menge $A$ enthält ein Element $B \in A$ derart, dass $A \cap B = \emptyset$. \note{Mengen enthalten sich nicht selbst als Element: $A=\{M\}$}
 	\item Informell: Bilder von Mengen unter definierbaren Funktionen sind selbst wieder Mengen.
 	\end{enumerate}
@@ -155,7 +119,7 @@
 		R^{-1} := \{(b,a)\mid (a,b)\in R\}
 	\end{align*}
 	Visualisierung durch Grpahen, etc.\\
-	Speziallfall $R\subseteq A\times A$ heißt binäre Relation auf A.\\
+	Speziallfall $R\subseteq A\times A$ heißt binäre Relation auf $A$.\\
 	Wichtige Eigenschaften:
 	\begin{itemize}
 		\item reflexiv: $\forall a \in A: (a,a)\in R$
@@ -166,25 +130,25 @@
 	\begin{example}
 			Bsp.: Teilerrelation, $\leq$-Relation auf $\mathbb{N}$, Diagonalrelation $\Delta_x$, Allrelation $\nabla_x$
 	\end{example}
-	\paragraph{Äquivalenzrelation}
+	\paragraph{Äquivalenzrelation} \
 	\begin{definition}
-		Sei $A$ Menge. Eine Relation $R\subseteq A\times A$ heißt Äquivalenzrelation auf A, falls R reflexiv, symmetrisch, transitiv ist.
+		Sei $A$ Menge. Eine Relation $R\subseteq A\times A$ heißt Äquivalenzrelation auf $A$, falls $R$ reflexiv, symmetrisch, transitiv ist.
 	\end{definition}
-	Für $x \in A$ heißt $[x]_R:=\{y\in A\mid xRy\}$ die Äquivalenzklasse von $x$ bzgl. R. Die Menge $A/R:=\{[x]_R\mid x\in A\}$ aller Äquivalenzklassen bzgl. $R$ wird als Faktormenge von $A$ nach $R$ \note{modulo} bezeichnet.
+	Für $x \in A$ heißt $[x]_R:=\{y\in A\mid xRy\}$ die Äquivalenzklasse von $x$ bzgl. $R$. Die Menge $A/R:=\{[x]_R\mid x\in A\}$ aller Äquivalenzklassen bzgl. $R$ wird als Faktormenge von $A$ nach $R$ \note{modulo} bezeichnet.
 	\begin{theorem}
-		Sei R Äquivalenzrelation auf einer Menge A. Dann gilt:
+		Sei $R$ Äquivalenzrelation auf einer Menge $A$. Dann gilt:
 		\begin{align*}
 			\forall x,y \in A: (x,y) \in R \iff [x]_R=[y]_R
 		\end{align*}ubsubsection
 	\end{theorem}
-	Beweis:
+	\prove
 	\begin{align*}
 		\forall x,y \in A: (x,y) \in R \implies [y]_R \subseteq [x]_R \quad \text(*)
 	\end{align*}
-	Sei $(x,y)\in R$. Sei $z\in [y]_R$, d.h. $(y,z) \in R$. Wegen Transitivität von R: $(x,y)\in R \land (y,z)\in R \implies (x,z) \in R$. Somit $z\in [x]_R$. Somit (*) bewiesen.\\
-	Sei $(x,y)\in R$. Wegen (*) ist $[y]_R \subseteq [x]_R$. Wegen Symmetrie von R und $(x,y)\in R$ ist auch $(y,x)\in R$, damit nach (*) auch $[x]_R\subseteq [y]_R$. Also $[x]_R=[y]_R$.
-	Seien $x,y \in A$ mit $[x]_R =[y]_R$. Wegen Reflexivität von R ist $(y,y) \in R$, d. h. $y \in [y]_R$. Daher $y\in [x]_R$ (nach Vorraussetzung), also $(x,y) \in R$. $\Box$
-	\paragraph{Partitionen}	
+	Sei $(x,y)\in R$. Sei $z\in [y]_R$, d.h. $(y,z) \in R$. Wegen Transitivität von $R$: $(x,y)\in R \land (y,z)\in R \implies (x,z) \in R$. Somit $z\in [x]_R$. Somit (*) bewiesen.\\
+	Sei $(x,y)\in R$. Wegen (*) ist $[y]_R \subseteq [x]_R$. Wegen Symmetrie von $R$ und $(x,y)\in R$ ist auch $(y,x)\in R$, damit nach (*) auch $[x]_R\subseteq [y]_R$. Also $[x]_R=[y]_R$.
+	Seien $x,y \in A$ mit $[x]_R =[y]_R$. Wegen Reflexivität von $R$ ist $(y,y) \in R$, d.h. $y \in [y]_R$. Daher $y\in [x]_R$ (nach Vorraussetzung), also $(x,y) \in R$. $\Box$
+	\paragraph{Partitionen}	\
 	\begin{definition}
 			Sei $A$ eine Menge. Eine Partition von $A$ ist eine Menge $\mathcal{C}$ von nicht-leeren Teilmengen von $A$ derart, dass
 			\begin{enumerate}
@@ -193,20 +157,20 @@
 			\end{enumerate}
 	\end{definition}
 	\note{bissl wie Partitionen bei Rechnern}\\
-	Ist $\mathcal{C}$ eine Partition von A, so definiere man eine Relation $Rel_{\mathcal{C}}\subseteq A \times A$ durch
+	Ist $\mathcal{C}$ eine Partition von $A$, so definiere man eine Relation $Rel_{\mathcal{C}}\subseteq A \times A$ durch
 	\begin{align*}
 		Rel_{\mathcal{C}} := \{(x,y)\in A^2\mid \exists C \in \mathcal{C}: (x\in C)\land(y \in C)\}
 	\end{align*}
 	\begin{theorem}
 		Sei $A$ Menge.
 		\begin{enumerate}
-			\item Ist R eine Äquivalenzrelation auf $A$, dann ist $A/R$ eine Partition auf A, und es gilt $Rel_{A/R}=R$.
-			\item Ist $\mathcal{C}$ eine Partition auf $A$, dann ist $Rel_{\mathcal{C}}$ eine Äquivalenzrelation auf A, und es gilt $A/Rel_{\mathcal{C}}=\mathcal{C}$.
+			\item Ist R eine Äquivalenzrelation auf $A$, dann ist $A/R$ eine Partition auf $A$, und es gilt $Rel_{A/R}=R$.
+			\item Ist $\mathcal{C}$ eine Partition auf $A$, dann ist $Rel_{\mathcal{C}}$ eine Äquivalenzrelation auf $A$, und es gilt $A/Rel_{\mathcal{C}}=\mathcal{C}$.
 		\end{enumerate}
 	\end{theorem}
 	\subsubsection{Abbildung (Funktion)}
 	\begin{definition*}
-		Eine Abbildung $f$ von einer Menge $A$ nach einer Menge $B$ ordnet jedem $x \in A$ genau ein Element aus B zu, welches dann mit $f(x)$ bezeichnet wird. 
+		Eine Abbildung $f$ von einer Menge $A$ nach einer Menge $B$ ordnet jedem $x \in A$ genau ein Element aus $B$ zu, welches dann mit $f(x)$ bezeichnet wird. 
 	\end{definition*}
 	(Schreibweise $f:A \to B, x \mapsto f(x)$)\\
 	Genauer:
@@ -240,11 +204,11 @@
 	\begin{align*}
 		f|_{A'}:A'\to B, a \mapsto f(a)
 	\end{align*}
-	d. h. $(f|_{A'})^{\bullet}=f^{\bullet} \cap (A'\times B)$. Die binäre Relation 
+	d.h. $(f|_{A'})^{\bullet}=f^{\bullet} \cap (A'\times B)$. Die binäre Relation 
 	\begin{align*}
 		\ker(f):=\{(a,a')\in A \times A\mid f(a)=f(a')\}
 	\end{align*}
-	heißt der Kern von $f$, und $\ker(f)$ ist eine Äquivalenzrelation auf A.
+	heißt der Kern von $f$, und $\ker(f)$ ist eine Äquivalenzrelation auf $A$.
 	\begin{example}\ 
 		\begin{itemize}
 			\item $A$ Menge. Dann $\mathrm{id}_A: A \to A$ bijektiv und $\mathrm{graph}(\mathrm{id}_A)=\Delta_A$
@@ -284,7 +248,7 @@
 	\begin{align*}
 		(f^{\bullet})^{-1}\subseteq B \times A
 	\end{align*}
-	der Graph einer Abb. von B nach A, wenn $f$ bijektiv ist. In diesem Fall nennt man $f^{-1}:B\to A$ mit $(f^{-1})^{\bullet}:=(f^{\bullet})^{-1}$, d.h. $f^{-1}(b)=a: f(a)=b$, die Umkehrabbildung (Umkehrfunktion) von $f$.
+	der Graph einer Abb. von $B$ nach $A$, wenn $f$ bijektiv ist. In diesem Fall nennt man $f^{-1}:B\to A$ mit $(f^{-1})^{\bullet}:=(f^{\bullet})^{-1}$, d.h. $f^{-1}(b)=a: f(a)=b$, die Umkehrabbildung (Umkehrfunktion) von $f$.
 	\subsubsection{Gleichmächtigkeit} 
 	$A,B$ Mengen. $A$ und $B$ sind gleichmächtig ($|A|=|B|$):$\iff$ $\exists$ bijektive Abb. $f: A \to B$\\
 	Weiter:
@@ -326,7 +290,7 @@
 	\section{Analysis}
 	\subsection{Zahlensysteme}
 	\begin{definition}
-		Seien X, Y zwei Mengen, dann ist die Menge aller geordneten Paare $(x,y)$ von Elementen $x \in X, y \in Y$ das kartesische Produkt $X \times Y$
+		Seien $X, Y$ zwei Mengen, dann ist die Menge aller geordneten Paare $(x,y)$ von Elementen $x \in X, y \in Y$ das kartesische Produkt $X \times Y$
 	\end{definition}
 	\begin{definition}
 		Eine Operation oder Verknüpfung $\square$ in einer Menge $X$ ist eine Zuordnung, welche jedem Paar $(x,y)\in X\times X$ genaun ein Element $x\square y \in X$ zuordnet.
@@ -343,17 +307,17 @@
 		$(\{0,1\},+)$
 	\end{example}
 	\begin{theorem}
-		Sei $(X,\square)$ eine abelsche Gruppe. Dann gilt:\begin{enumerate}[label=(\upshape\roman*)]
+		Sei $(X,\square)$ eine abelsche Gruppe. Dann gilt:\begin{enumerateroman}
 			\item Das neutrale Element ist eindeutig.
 			\item Das inverse Element ist eindeutig.
 			\item Das inverse Element des inversen Elements ist das Element selbst.
-		\end{enumerate}
+		\end{enumerateroman}
 	\end{theorem}
-	Beweis.:
-	\begin{enumerate}[label=(\roman*)]
+	\prove
+	\begin{enumerateroman}
 		\item Angenommen $\exists e, e' \in X: e\neq e'\implies e\square e'=e, e'\square e=e'\implies e'=e$ \lightning
 		\item Angenommen $\exists \bar{x},\tilde{x} \in X: \bar{x}\neq\tilde{x}\implies \bar{x}=e\square \bar{x}=(\tilde{x}\square x) \square \bar{x}= \tilde{x}$\lightning
-	\end{enumerate}
+	\end{enumerateroman}
 	\begin{definition}
 		Eine Menge $X$ mit mindestens zwei Elementen und zwei Operationen $+$ und $\cdot$ heißt Körper, falls \begin{itemize}
 			\item $(X,+)$ abelsche Gruppe
@@ -362,18 +326,18 @@
 		\end{itemize}
 	\end{definition}
 \begin{definition}
-	Ein Körper $(X,+,\cdot)$ mit einer Relation $<$ heißt archimedisch angeordneter Körper.\begin{enumerate}[label=(\upshape\roman*)]
+	Ein Körper $(X,+,\cdot)$ mit einer Relation $<$ heißt archimedisch angeordneter Körper.\begin{enumerateroman}
 		\item totale Ordnung: $\forall x,y \in X$ gilt genau eine der Möglichkeiten $x<y,x=y,x>y$
 		\item Transitivität: $\forall x,y,z \in X: x<y,y<z\implies x<z$
 		\item Monotonie bzgl. der Addition $\forall x,y,z \in X: x <y\implies x+z< y+z$
 		\item Monotonie bzgl. der Multiplikation $\forall x,y,z \in X$ mit $z>0$: $x<y\implies x\cdot z<y\cdot$
 		\item archimedische Ordnung: Zu $a,b > 0 \exists n \in \mathbb{N}: b<\sum\limits_{i=1}^{n}a$ 
-	\end{enumerate}
+	\end{enumerateroman}
 \end{definition}
 \begin{theorem}
 	Sei $0$ das neutrale Element bzgl. $+$ und $1$ das neutrale ELement bzgl. $\cdot$ in einem archimedischen angeordneten Körper, dann gilt $1>0$.
 \end{theorem}
-\paragraph{Beweis}
+\prove
 Angenommen es gilt $1>0$
 \begin{align*}
 	\implies&1=0\text{\lightning}\\
@@ -398,7 +362,7 @@ Aus den Körperaxiomen sowie den Ordnungseigenschaften lassn sich alle gängigen
 		(1+x)^n\geq 1+n\cdot x
 	\end{align*}
 \end{theorem}
-\paragraph{Beweis}
+\prove
 \begin{itemize}
 	\item[IA]$n=1, (1+x)^1\geq 1+x$
 	\item[IB]$(1+x)^n\geq 1+nx$
@@ -406,16 +370,16 @@ Aus den Körperaxiomen sowie den Ordnungseigenschaften lassn sich alle gängigen
 \end{itemize}
 \begin{theorem}
 	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper. Dann gilt
-	\begin{enumerate}
+	\begin{enumerateroman}
 		\item $b>1, M>0, \exists n\in \mathbb{N}: b^n>M$
 		\item $0<q<1, \forall\epsilon>0, \exists n\in N: q^n<\epsilon$
-	\end{enumerate}
+	\end{enumerateroman}
 \end{theorem}
-\paragraph{Beweis}
-\begin{enumerate}
+\prove
+\begin{enumerateroman}
 	\item $x=b-1>0$. Mit $b^n=(x+1)^n\geq 1+nx$. $\exists n\in \mathbb{N}:n\cdot x>M\implies b^n>M$
 	\item $b=q^{-1}>1$, dann $\exists n\in \mathbb{N}$. $b^n>\frac{1}{\epsilon} \implies q^n>\epsilon$ 
-\end{enumerate}
+\end{enumerateroman}
 
 
 
