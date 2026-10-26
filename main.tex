@@ -17,6 +17,8 @@
 
 \usepackage{xcolor}
 
+\usepackage{enumitem}
+
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 \newtheorem*{definition*}{Definition}
@@ -89,9 +91,9 @@
 	Beschreibung von Mengen durch Eigenschaften $A:=\{x \in B\mid P(x)\}$
 
 	\paragraph{Mengentheoretische Bezeichnungen und Operationen}
-	Seien A und B Mengen:
+	Seien $A$ und $B$ Mengen:
 	\begin{itemize}
-	\item Enthaltenseinsbeziehung (Inklusion):\\ A heißt Teilmenge von B ($A \subseteq B$), falls jedes Element von A auch Element von B ist.
+	\item Enthaltenseinsbeziehung (Inklusion):\\ $A$ heißt Teilmenge von B ($A \subseteq B$), falls jedes Element von $A$ auch Element von B ist.
 	\item echte Teilmenge $A \neq B \land A \subseteq B:A \subset B$ 
 	\item Gleichheit ($A = B$):
 		 $A\subseteq B \land B \subseteq A$
@@ -114,11 +116,11 @@
 	\begin{enumerate}
 	\item Leermengenaxiom: Es gibt eine leere Menge.
 	\item Extensionalitätsaxiom: Zwei Mengen sind genau dann gleich, wenn sie dieselben Elemente beinhalten.
-	\item Paarmengenaxiom: Für je zwei Mengen A und B existiert eine Menge $\{A, B\}$, die genau A und B als Elemente besitzt.
-	\item Vereinigungsaxiom: Für jede Menge A existiert eine Menge, deren Elemente genau die Elemente der Elemente von A sind. (Bsp. Menge enthält Mengen)
-	\item Unendlichkeitsaxiom: Es gibt eine Menge A, die die leere Menge und für jedes $x \in A$ auch die Menge $x \cup \{x\}$ als Element enthält.
-	\item Potenzmengenaxiom: Für jede Menge A existiert eine Menge, deren Elemente genau die Teilmengen von A sind.
-	\item Fundierungsaxiom: Jede nichtleere Menge A enthält ein Element $B \in A$ derart, dass $A \cap B = \emptyset$. \note{Mengen enthalten sich nicht selbst als Element: $A=\{M\}$}
+	\item Paarmengenaxiom: Für je zwei Mengen $A$ und $B$ existiert eine Menge $\{A, B\}$, die genau A und B als Elemente besitzt.
+	\item Vereinigungsaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Elemente der Elemente von A sind. (Bsp. Menge enthält Mengen)
+	\item Unendlichkeitsaxiom: Es gibt eine Menge $A$, die die leere Menge und für jedes $x \in A$ auch die Menge $x \cup \{x\}$ als Element enthält.
+	\item Potenzmengenaxiom: Für jede Menge $A$ existiert eine Menge, deren Elemente genau die Teilmengen von A sind.
+	\item Fundierungsaxiom: Jede nichtleere Menge $A$ enthält ein Element $B \in A$ derart, dass $A \cap B = \emptyset$. \note{Mengen enthalten sich nicht selbst als Element: $A=\{M\}$}
 	\item Informell: Bilder von Mengen unter definierbaren Funktionen sind selbst wieder Mengen.
 	\end{enumerate}
 
@@ -145,7 +147,7 @@
 	\end{align*}
 	\subsubsection{Relationen}
 	\begin{definition}
-		Eine Relation zwischen zwei Mengen A und B ist eine Teilmenge $R\subseteq A\times B$.
+		Eine Relation zwischen zwei Mengen $A$ und $B$ ist eine Teilmenge $R\subseteq A\times B$.
 	\end{definition}
 	Schreibweise: statt $(a,b) \in R$ auch $aRb$ (Infix-Notation)\\
 	Inverse Relation $R^{-1}\subseteq B \times A$ zu einer Relation $R\subseteq A \times B$ ist definiert als
@@ -166,9 +168,9 @@
 	\end{example}
 	\paragraph{Äquivalenzrelation}
 	\begin{definition}
-		Sei A Menge. Eine Relation $R\subseteq A\times A$ heißt Äquivalenzrelation auf A, falls R reflexiv, symmetrisch, transitiv ist.
+		Sei $A$ Menge. Eine Relation $R\subseteq A\times A$ heißt Äquivalenzrelation auf A, falls R reflexiv, symmetrisch, transitiv ist.
 	\end{definition}
-	Für $x \in A$ heißt $[x]_R:=\{y\in A\mid xRy\}$ die Äquivalenzklasse von $x$ bzgl. R. Die Menge $A/R:=\{[x]_R\mid x\in A\}$ aller Äquivalenzklassen bzgl. R wird als Faktormenge von A nach R \note{modulo} bezeichnet.
+	Für $x \in A$ heißt $[x]_R:=\{y\in A\mid xRy\}$ die Äquivalenzklasse von $x$ bzgl. R. Die Menge $A/R:=\{[x]_R\mid x\in A\}$ aller Äquivalenzklassen bzgl. $R$ wird als Faktormenge von $A$ nach $R$ \note{modulo} bezeichnet.
 	\begin{theorem}
 		Sei R Äquivalenzrelation auf einer Menge A. Dann gilt:
 		\begin{align*}
@@ -184,9 +186,9 @@
 	Seien $x,y \in A$ mit $[x]_R =[y]_R$. Wegen Reflexivität von R ist $(y,y) \in R$, d. h. $y \in [y]_R$. Daher $y\in [x]_R$ (nach Vorraussetzung), also $(x,y) \in R$. $\Box$
 	\paragraph{Partitionen}	
 	\begin{definition}
-			Sei A eine Menge. Eine Partition von A ist eine Menge $\mathcal{C}$ von nicht-leeren Teilmengen von A derart, dass
+			Sei $A$ eine Menge. Eine Partition von $A$ ist eine Menge $\mathcal{C}$ von nicht-leeren Teilmengen von $A$ derart, dass
 			\begin{enumerate}
-				\item $A=\bigcup \mathcal{C}$, also alle Elemente von A in den Teilmengen
+				\item $A=\bigcup \mathcal{C}$, also alle Elemente von $A$ in den Teilmengen
 				\item $\forall B,C \in \mathcal{C}: B \neq C \implies B \cap C = \emptyset$, also Teilmengen disjunkt
 			\end{enumerate}
 	\end{definition}
@@ -196,23 +198,23 @@
 		Rel_{\mathcal{C}} := \{(x,y)\in A^2\mid \exists C \in \mathcal{C}: (x\in C)\land(y \in C)\}
 	\end{align*}
 	\begin{theorem}
-		Sei A Menge.
+		Sei $A$ Menge.
 		\begin{enumerate}
-			\item Ist R eine Äquivalenzrelation auf A, dann ist $A/R$ eine Partition auf A, und es gilt $Rel_{A/R}=R$.
-			\item Ist $\mathcal{C}$ eine Partition auf A, dann ist $Rel_{\mathcal{C}}$ eine Äquivalenzrelation auf A, und es gilt $A/Rel_{\mathcal{C}}=\mathcal{C}$.
+			\item Ist R eine Äquivalenzrelation auf $A$, dann ist $A/R$ eine Partition auf A, und es gilt $Rel_{A/R}=R$.
+			\item Ist $\mathcal{C}$ eine Partition auf $A$, dann ist $Rel_{\mathcal{C}}$ eine Äquivalenzrelation auf A, und es gilt $A/Rel_{\mathcal{C}}=\mathcal{C}$.
 		\end{enumerate}
 	\end{theorem}
 	\subsubsection{Abbildung (Funktion)}
 	\begin{definition*}
-		Eine Abbildung $f$ von einer Menge A nach einer Menge B ordnet jedem $x \in A$ genau ein Element aus B zu, welches dann mit $f(x)$ bezeichnet wird. 
+		Eine Abbildung $f$ von einer Menge $A$ nach einer Menge $B$ ordnet jedem $x \in A$ genau ein Element aus B zu, welches dann mit $f(x)$ bezeichnet wird. 
 	\end{definition*}
 	(Schreibweise $f:A \to B, x \mapsto f(x)$)\\
 	Genauer:
 	\begin{definition}
 		Eine Abbildung $f$ ist ein Tripel $(A,f^{\bullet}, B)$ bestehend aus
 		\begin{itemize}
-			\item einer Menge A (Definitionsbereich)
-			\item einer Menge B (Zielbereich)
+			\item einer Menge $A$ (Definitionsbereich)
+			\item einer Menge $B$ (Zielbereich)
 			\item einer Relation $f^{\bullet}\subseteq A \times B$ (Graph von $f$ ($\mathrm{graph}(f)$))
 		\end{itemize}
 		mit folgenden Eigenschaften:
@@ -245,13 +247,13 @@
 	heißt der Kern von $f$, und $\ker(f)$ ist eine Äquivalenzrelation auf A.
 	\begin{example}\ 
 		\begin{itemize}
-			\item A Menge. Dann $\mathrm{id}_A: A \to A$ bijektiv und $\mathrm{graph}(\mathrm{id}_A)=\Delta_A$
+			\item $A$ Menge. Dann $\mathrm{id}_A: A \to A$ bijektiv und $\mathrm{graph}(\mathrm{id}_A)=\Delta_A$
 			\item Seien $A_1, A_2$ Mengen. Die Abb. \begin{align*}
 				p_1&: A_1 \times A_2 \to A_1\\
 				p_2&: A_1 \times A_2 \to A_2
 			\end{align*}
 			heißen Projektionen.
-			\item R Äquivalenzrelation auf Menge A. Dann ist die Abb.
+			\item $R$ Äquivalenzrelation auf Menge $A$. Dann ist die Abb.
 			\begin{align*}
 				\pi_R: A \to A/R
 			\end{align*}
@@ -263,11 +265,11 @@
 		\end{itemize}
 	\end{example}	
 	\paragraph{Komposition von Abbildungen}
-	A,B,C Mengen. Für Abb. $f: A \to B$ und $g:B\to C$ heißt
+	$A,B,C$ Mengen. Für Abb. $f: A \to B$ und $g:B\to C$ heißt
 	\begin{align*}
 		g\circ f: A \to C, x \mapsto g(f(x))
 	\end{align*}
-	die Komposition (Verkettung) `g nach f'.\\
+	die Komposition (Verkettung) `$g$ nach $f$'.\\
 	Für $f: A \to A$ und $n\in \mathbb{N}$ ist
 	\begin{align*}
 		f^n:= f \circ \dots \circ f:A \to A
@@ -284,7 +286,7 @@
 	\end{align*}
 	der Graph einer Abb. von B nach A, wenn $f$ bijektiv ist. In diesem Fall nennt man $f^{-1}:B\to A$ mit $(f^{-1})^{\bullet}:=(f^{\bullet})^{-1}$, d.h. $f^{-1}(b)=a: f(a)=b$, die Umkehrabbildung (Umkehrfunktion) von $f$.
 	\subsubsection{Gleichmächtigkeit} 
-	A,B Mengen. A und B sind gleichmächtig ($|A|=|B|$):$\iff$ $\exists$ bijektive Abb. $f: A \to B$\\
+	$A,B$ Mengen. $A$ und $B$ sind gleichmächtig ($|A|=|B|$):$\iff$ $\exists$ bijektive Abb. $f: A \to B$\\
 	Weiter:
 	\begin{align*}
 		|A|\neq |B| &:\iff \not(|A|=|B|)\\
@@ -295,7 +297,7 @@
 		$\mathbb{N}, \mathbb{Q}, \mathbb{Z}, \mathbb{N}\times \mathbb{N}$ sind gleichmächtig
 	\end{example}
 	\begin{theorem}
-		(Cantor) Für jede Menge A ist $|A| < |\mathcal{P}(A)|$.
+		(Cantor) Für jede Menge $A$ ist $|A| < |\mathcal{P}(A)|$.
 	\end{theorem}
 
 
@@ -322,10 +324,118 @@
 	
 	\newpage
 	\section{Analysis}
-	
+	\subsection{Zahlensysteme}
+	\begin{definition}
+		Seien X, Y zwei Mengen, dann ist die Menge aller geordneten Paare $(x,y)$ von Elementen $x \in X, y \in Y$ das kartesische Produkt $X \times Y$
+	\end{definition}
+	\begin{definition}
+		Eine Operation oder Verknüpfung $\square$ in einer Menge $X$ ist eine Zuordnung, welche jedem Paar $(x,y)\in X\times X$ genaun ein Element $x\square y \in X$ zuordnet.
+	\end{definition}
+	\begin{definition}
+		Eine Menge $X$ versehen mit einer VVerknüpfung $\square$ heißt abelsche Gruppe, falls folgende Eigenschaften erfüllt sind:\begin{enumerate}
+			\item Kommutativ
+			\item Assoziativ
+			\item Inverse Element ($\forall x \in X \exists \bar{x}\in X: x\square \bar{x}=e$)
+			\item Neutrales Element ($\exists e \in X: \forall x\in X x\square e =x$)
+		\end{enumerate}
+	\end{definition}
+	\begin{example}
+		$(\{0,1\},+)$
+	\end{example}
+	\begin{theorem}
+		Sei $(X,\square)$ eine abelsche Gruppe. Dann gilt:\begin{enumerate}[label=(\upshape\roman*)]
+			\item Das neutrale Element ist eindeutig.
+			\item Das inverse Element ist eindeutig.
+			\item Das inverse Element des inversen Elements ist das Element selbst.
+		\end{enumerate}
+	\end{theorem}
+	Beweis.:
+	\begin{enumerate}[label=(\roman*)]
+		\item Angenommen $\exists e, e' \in X: e\neq e'\implies e\square e'=e, e'\square e=e'\implies e'=e$ \lightning
+		\item Angenommen $\exists \bar{x},\tilde{x} \in X: \bar{x}\neq\tilde{x}\implies \bar{x}=e\square \bar{x}=(\tilde{x}\square x) \square \bar{x}= \tilde{x}$\lightning
+	\end{enumerate}
+	\begin{definition}
+		Eine Menge $X$ mit mindestens zwei Elementen und zwei Operationen $+$ und $\cdot$ heißt Körper, falls \begin{itemize}
+			\item $(X,+)$ abelsche Gruppe
+			\item $(X\setminus 0, \cdot)$ abelsche Gruppe
+			\item Distributiv
+		\end{itemize}
+	\end{definition}
+\begin{definition}
+	Ein Körper $(X,+,\cdot)$ mit einer Relation $<$ heißt archimedisch angeordneter Körper.\begin{enumerate}[label=(\upshape\roman*)]
+		\item totale Ordnung: $\forall x,y \in X$ gilt genau eine der Möglichkeiten $x<y,x=y,x>y$
+		\item Transitivität: $\forall x,y,z \in X: x<y,y<z\implies x<z$
+		\item Monotonie bzgl. der Addition $\forall x,y,z \in X: x <y\implies x+z< y+z$
+		\item Monotonie bzgl. der Multiplikation $\forall x,y,z \in X$ mit $z>0$: $x<y\implies x\cdot z<y\cdot$
+		\item archimedische Ordnung: Zu $a,b > 0 \exists n \in \mathbb{N}: b<\sum\limits_{i=1}^{n}a$ 
+	\end{enumerate}
+\end{definition}
+\begin{theorem}
+	Sei $0$ das neutrale Element bzgl. $+$ und $1$ das neutrale ELement bzgl. $\cdot$ in einem archimedischen angeordneten Körper, dann gilt $1>0$.
+\end{theorem}
+\paragraph{Beweis}
+Angenommen es gilt $1>0$
+\begin{align*}
+	\implies&1=0\text{\lightning}\\
+	\implies&1<0\implies 1+\bar{1}<0+\bar{1}\\
+	&\implies 0<\bar{1}\\
+	&\implies 0\cdot \bar{1}< \bar{1}\cdot\bar{1}\\
+	&\implies 0 < 1\text{\lightning}
+\end{align*}
+Folglich $1>0$.\\
+\paragraph{Bemerkung}
+Aus den Körperaxiomen sowie den Ordnungseigenschaften lassn sich alle gängigen Rechenregeln ableiten.
+\begin{enumerate}
+	\item $a\cdot 0 =0$
+	\item $a\cdot b = 0 \iff a=0 \lor b=0$
+	\item $a(-b)=(-a)b=-(ab)$
+	\item $(-a)(-b)=ab$
+	\item $a>0\implies -a<0\land \frac{1}{a}>0$
+	\item $a>b>0\implies 0<\frac{1}{a}<\frac{1}{b}$
+\end{enumerate}
+\begin{theorem}[Bernoulli-Ungleichung]
+	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper, dann gilt für jedes $n\in\mathbb{N}$ und $x\geq -1$\begin{align*}
+		(1+x)^n\geq 1+n\cdot x
+	\end{align*}
+\end{theorem}
+\paragraph{Beweis}
+\begin{itemize}
+	\item[IA]$n=1, (1+x)^1\geq 1+x$
+	\item[IB]$(1+x)^n\geq 1+nx$
+	\item[IS]$(1+x)^{n+1}\geq(1+x)(1+nx)=1+(n+1)x+n\cdot x^2\geq 1+(n+1)x$  
+\end{itemize}
+\begin{theorem}
+	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper. Dann gilt
+	\begin{enumerate}
+		\item $b>1, M>0, \exists n\in \mathbb{N}: b^n>M$
+		\item $0<q<1, \forall\epsilon>0, \exists n\in N: q^n<\epsilon$
+	\end{enumerate}
+\end{theorem}
+\paragraph{Beweis}
+\begin{enumerate}
+	\item $x=b-1>0$. Mit $b^n=(x+1)^n\geq 1+nx$. $\exists n\in \mathbb{N}:n\cdot x>M\implies b^n>M$
+	\item $b=q^{-1}>1$, dann $\exists n\in \mathbb{N}$. $b^n>\frac{1}{\epsilon} \implies q^n>\epsilon$ 
+\end{enumerate}
+
+
+
+
+
+
+
+
+
 	\newpage
-	\section{Grundlagen der Informatik}
+	\section{Algorithmen, Datenstrukturen, Programmierung}
 	
+
+
+
+
+
+
+
+
 	\newpage
 	\section{Technische Mechanik}
 	\subsection{Statik}
@@ -340,10 +450,19 @@
 	\subsection{Dynamik}
 
 
-
+	\newpage
 	\section{Theoretische Physik}
-		
-
+	\subsubsection{Theoretische Mechanik}
+	\begin{definition}[Bezugssystem]
+		Ort nur in Bezug auf einen anderen Ort
+	\end{definition}
+	Begriffe: Ortkoordinaten, Zeitkoordinate, Massepunkt\\
+	Ziel: Berechnung der Bahnkurve
+	\paragraph{Newtons Axiome}
+	\begin{enumerate}
+		\item In Inertialsystemen wird die kräftefreie Bewegung durch konstante Geschwindigkeit beschrieben werden.
+		\item 
+	\end{enumerate}
 
 
 
