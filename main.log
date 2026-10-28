@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  27 OCT 2026 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  28 OCT 2026 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -640,27 +640,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )) (./main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 8.
-)
+ (./modules/LINA.aux) (./modules/ANA.aux) (./modules/ALDAP.aux) (./modules/TM.aux) (./modules/THEOPHYS.aux) (./modules/ES.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 
 Package siunitx Warning: Detected the "physics" package:
@@ -676,7 +676,7 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 12.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -731,20 +731,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 13.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 15.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 ) (./main.toc)
@@ -754,40 +754,79 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+\openout2 = `modules/LINA.aux'.
+
+ (./modules/LINA.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 	\item S
+l.45 	\item S
              ymmetrische Differenz: $A \bigtriangleup B := (A \cup B)\setmin... [1
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] [4] [5]) [6]
+\openout2 = `modules/ANA.aux'.
+
+ (./modules/ANA.tex [7
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 416--418
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 [9]
 
-LaTeX Warning: Command \" invalid in math mode on input line 420.
+LaTeX Warning: Command \" invalid in math mode on input line 129.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 420.
+LaTeX Warning: Command \" invalid in math mode on input line 129.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 420.
+LaTeX Warning: Command \" invalid in math mode on input line 129.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 420.
+LaTeX Warning: Command \" invalid in math mode on input line 129.
 
 Missing character: There is no ä in font cmr8!
-[10] [11] [12] [13] [14] (./main.aux)
+[10]) [11]
+\openout2 = `modules/ALDAP.aux'.
+
+ (./modules/ALDAP.tex) [12
+
+
+
+]
+\openout2 = `modules/TM.aux'.
+
+ (./modules/TM.tex) [13
+
+
+
+]
+\openout2 = `modules/THEOPHYS.aux'.
+
+ (./modules/THEOPHYS.tex) [14
+
+
+
+]
+\openout2 = `modules/ES.aux'.
+
+ (./modules/ES.tex) [15
+
+
+
+] (./main.aux (./modules/LINA.aux) (./modules/ANA.aux) (./modules/ALDAP.aux) (./modules/TM.aux) (./modules/THEOPHYS.aux) (./modules/ES.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -796,18 +835,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 268B16A0B2C87EAC83853DB3F5C8E071;3112.
  ) 
 Here is how much of TeX's memory you used:
- 33877 strings out of 467363
- 726577 string characters out of 5419000
- 1180248 words of memory out of 6000000
- 62358 multiletter control sequences out of 15000+600000
+ 34041 strings out of 467363
+ 730726 string characters out of 5419000
+ 1182950 words of memory out of 6000000
+ 62469 multiletter control sequences out of 15000+600000
  645052 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  139i,20n,135p,577b,1446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on main.pdf (15 pages, 287649 bytes).
+Output written on main.pdf (16 pages, 293003 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
- 131 named destinations out of 1000 (max. 500000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 141 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
