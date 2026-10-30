@@ -1,0 +1,178 @@
+\section{Zahlensysteme}
+\begin{definition}
+	Seien $X, Y$ zwei Mengen, dann ist die Menge aller geordneten Paare $(x,y)$ von Elementen $x \in X, y \in Y$ das kartesische Produkt $X \times Y$
+\end{definition}
+\begin{definition}
+	Eine Operation oder Verknüpfung $\square$ in einer Menge $X$ ist eine Zuordnung, welche jedem Paar $(x,y)\in X\times X$ genaun ein Element $x\square y \in X$ zuordnet.
+\end{definition}
+\begin{definition}
+	Eine Menge $X$ versehen mit einer Verknüpfung $\square$ heißt abelsche Gruppe, falls folgende Eigenschaften erfüllt sind:\begin{enumerate}
+		\item Kommutativ
+		\item Assoziativ
+		\item Inverse Element ($\forall x \in X \exists \bar{x}\in X: x\square \bar{x}=e$)
+		\item Neutrales Element ($\exists e \in X: \forall x\in X x\square e =x$)
+	\end{enumerate}
+\end{definition}
+\begin{example}
+	$(\{0,1\},+)$
+\end{example}
+\begin{theorem}
+	Sei $(X,\square)$ eine abelsche Gruppe. Dann gilt:\begin{enumerateroman}
+		\item Das neutrale Element ist eindeutig.
+		\item Das inverse Element ist eindeutig.
+		\item Das inverse Element des inversen Elements ist das Element selbst.
+	\end{enumerateroman}
+\end{theorem}
+\prove
+\begin{enumerateroman}
+	\item Angenommen $\exists e, e' \in X: e\neq e'\implies e\square e'=e, e'\square
+		e=e'\implies e'=e$ \lightning
+	\item Angenommen $\exists \bar{x},\tilde{x} \in X: \bar{x}\neq\tilde{x}\implies
+		\bar{x}=e\square \bar{x}=(\tilde{x}\square x) \square \bar{x}=
+		\tilde{x}$\lightning
+\end{enumerateroman}
+\begin{definition}
+	Eine Menge $X$ mit mindestens zwei Elementen und zwei Operationen $+$ und $\cdot$ heißt Körper, falls \begin{itemize}
+		\item $(X,+)$ abelsche Gruppe
+		\item $(X\setminus 0, \cdot)$ abelsche Gruppe
+		\item Distributiv
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	Ein Körper $(X,+,\cdot)$ mit einer Relation $<$ heißt archimedisch angeordneter Körper.\begin{enumerateroman}
+		\item totale Ordnung: $\forall x,y \in X$ gilt genau eine der Möglichkeiten
+		$x<y,x=y,x>y$
+		\item Transitivität: $\forall x,y,z \in X: x<y,y<z\implies x<z$
+		\item Monotonie bzgl. der Addition $\forall x,y,z \in X: x <y\implies x+z< y+z$
+		\item Monotonie bzgl. der Multiplikation $\forall x,y,z \in X$ mit $z>0$:
+		$x<y\implies x\cdot z<y\cdot z$
+		\item archimedische Ordnung: Zu $a,b > 0 \exists n \in \N: b<\sum\limits_{i=1}^{n}a$
+	\end{enumerateroman}
+\end{definition}
+\begin{theorem}
+	Sei $0$ das neutrale Element bzgl. $+$ und $1$ das neutrale Element bzgl. $\cdot$ in einem archimedischen angeordneten Körper, dann gilt $1>0$.
+\end{theorem}
+\prove
+Angenommen es gilt $1>0$
+\begin{align*}
+	\implies & 1=0\text{\lightning}                         \\
+	\implies & 1<0\implies 1+\bar{1}<0+\bar{1}              \\
+	         & \implies 0<\bar{1}                           \\
+	         & \implies 0\cdot \bar{1}< \bar{1}\cdot\bar{1} \\
+	         & \implies 0 < 1\text{\lightning}
+\end{align*}
+Folglich $1>0$.\\
+\paragraph{Bemerkung}
+Aus den Körperaxiomen sowie den Ordnungseigenschaften lassn sich alle gängigen
+Rechenregeln ableiten.
+\begin{enumerate}
+	\item $a\cdot 0 =0$
+	\item $a\cdot b = 0 \iff a=0 \lor b=0$
+	\item $a(-b)=(-a)b=-(ab)$
+	\item $(-a)(-b)=ab$
+	\item $a>0\implies -a<0\land \frac{1}{a}>0$
+	\item $a>b>0\implies 0<\frac{1}{a}<\frac{1}{b}$
+\end{enumerate}
+\begin{theorem}[Bernoulli-Ungleichung]
+	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper, dann gilt für jedes $n\in\N$ und $x\geq -1$\begin{align*}
+		(1+x)^n\geq 1+n\cdot x
+	\end{align*}
+\end{theorem}
+\prove
+\begin{itemize}
+	\item[IA]$n=1, (1+x)^1\geq 1+x$
+	\item[IB]$(1+x)^n\geq 1+nx$
+	\item[IS]$(1+x)^{n+1}\geq(1+x)(1+nx)=1+(n+1)x+n\cdot x^2\geq 1+(n+1)x$
+\end{itemize}
+\begin{theorem}
+	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper. Dann gilt
+	\begin{enumerateroman}
+		\item $b>1, M>0, \exists n\in \N: b^n>M$
+		\item $0<q<1, \forall\varepsilon>0, \exists n\in N: q^n<\varepsilon$
+	\end{enumerateroman}
+\end{theorem}
+\prove
+\begin{enumerateroman}
+	\item $x=b-1>0$. Mit $b^n=(x+1)^n\geq 1+nx$. $\exists n\in \N:n\cdot x>M\implies b^n>M$
+	\item $b=q^{-1}>1$, dann $\exists n\in \N$. $b^n>\frac{1}{\varepsilon} \implies q^n>\varepsilon$
+\end{enumerateroman}
+\begin{definition}[Ordnungsvollständigkeit]
+	Seien $A,B\subset X$ zwei nichtleere Mengen, so dass $\forall a\in A, b\in B: a\leq b$. Dann $\exists c\in X: \forall a\in A, b \in B: a\leq c\leq b$
+\end{definition}
+\begin{definition}
+	Die reellen Zahlen $\R$ sind ein archimedisch angeordneter Körper, welcher die Ordnungvollständigkeit erfüllt.
+\end{definition}
+\paragraph{Bemerkung} Problem:
+\begin{enumerate}
+	\item Gibt es die reellen Zahlen überhaupt?
+	\item Sind die reellen Zahlen eindeutig
+\end{enumerate}
+\section{Supremum und Infimum}
+\begin{definition}
+	Sei $A\subset \R$ ein nichtleere Teilemenge, dann heißt $x \in \R$
+	\begin{itemize}
+		\item obere Schranke von $A$, falls $\forall a \in A: a\leq x$
+		\item untere Schranke von $A$, falls $\forall a \in A: a\geq x$
+		\item Maximum, falls obere Schranke und $x\in A$
+		\item Minimum, falls untere Schranke und $x\in A$
+		\item Supremum: kleinste obere Schranke
+		\item Infimum: größte untere Schranke
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	Eine Menge $A\subset\R$ heißt beschränkt, falls sie eine obere und eine untere Schranke hat.
+\end{definition}
+\begin{theorem}
+	Jede nichtleere, beschränkte Menge $A\subset\R$ besitzt ein eindeutig bestimmtes Infimum $\inf A$ und Supremum $\sup A$.
+\end{theorem}
+\prove \
+\begin{itemize}
+	\item Existenz:\\ $B=\{x\in \R\mid \forall a \in A: x\geq a\}$. Nach Vorraussetzung
+	      sind $A, B \in \R$ nicht leer und es gilt für alle $a \in A, b\in B: a \leq
+		      b$\\
+	      \begin{align*}
+		      \xRightarrow[vollstaendigkeit]{Ordnungs} \exists c \in \R: \forall a\in A, b in B: a\leq c\leq b
+	      \end{align*}
+	\item Eindeutigkeit:\\ Angenommen $c\neq \tilde{c}$ seien zwei verschiedene Suprema
+	      von $A$. Angenommen $c< \tilde{c}\implies \tilde{c}$ ist Supremum. \lightning
+\end{itemize}
+Schreibweise kein Supremum/ Infimum: $\pm \infty$
+\begin{theorem}
+	Eine Zahl $x\in \R$ ist genau dann Supremum der nach oben beschränkten Menge $A$, wenn sie die folgenden Eigenschaften besitzt:
+	\begin{enumerateroman}
+		\item $\forall a\in A: x \geq a$
+		\item $\forall \varepsilon > 0 \exists a \in A: a+\varepsilon > x$
+	\end{enumerateroman}
+\end{theorem}
+\prove \
+\begin{itemize}
+	\item[$\Rightarrow$]
+	      \begin{enumerateroman}
+		      \item nach Definition erfüllt
+		      \item Angenommen gilt nicht, d.h. $\exists\varepsilon>0\forall a\in A: a+\varepsilon
+			      \leq x\implies \forall a \in A: a \leq x-\varepsilon$ \lightning
+	      \end{enumerateroman}
+	\item[$\Leftarrow$] Dann ist $x$ obere Schranke von $A$.\\ Angenommen $y<x$ wäre kleinere obere Schranke. Mit $\varepsilon=x-y$ und $\forall a \in A$ gilt \begin{align*}
+		      a+\varepsilon=a+x-y
+	      \end{align*}
+	      Da $a<y\implies a-y<0\implies a+\varepsilon\leq x$\lightning
+\end{itemize}
+
+\begin{theorem}[Intervallschachtellung]
+	Es sei $I_n=[a_n, b_n], n\in \N$ ein System von Intervallen mit $I_{n+1}\subset I_n$. Dann ist $\bigcap_{n\in \N}I_n=\{x\in \R\mid x\in I_n \forall n\in \N\}$ nicht leer, d.h. $\exists c \in \R$ mit $a_n\leq c\leq b_n \forall n \in \N$. Existiert zu jedem $\varepsilon >0$ ein $n\in\N$ mit $b_n-a_n<\varepsilon$, dann gilt $\bigcap_{n\in\N} I_n = \{c\}$. $I_n$ heißt dann Intervallschachtellung zu der Zahl $c$.
+\end{theorem}
+\paragraph{Bemerkung} Es ist wichtig, dass die Intervalle abgeschlossen sind. \prove \begin{itemize}
+	\item Existenz: Wir setzen $A=\{a_n\mid n\in \N\}, B=\{b_n\mid n\in \N\}$. Dann gilt
+	      $\forall k>n: a_n\leq a_k \leq b_k \leq b_n\implies a\leq b \forall a\in A,
+		      b\in B$. Nach dem Vollständigkeitsaxiom existiert ein $c\in \R$ mit $a\leq
+		      c\leq b \forall a\in A,b\in B\implies c \in[a_n,b_n] \forall n \in N \implies c
+		      \in \bigcap_{n\in\N} I_n$
+	\item Eindeutigkeit: Angenommen $c,\tilde{c}\in\bigcap_{n\in\N}I_n$ und $c\neq
+		      \tilde{c}$. Setze für jedes $c< \tilde{c}, \varepsilon =\tilde{c}-c>0$. Nach
+	      Vorraussetzung $\exists n\in\N: b_n-a_n<\varepsilon$\lightning zu $a_n\leq
+		      c<\tilde{c}\leq b_n$
+\end{itemize}
+\begin{theorem}
+	Zu jedem $x\in \R, x>0$ und $k\in\N\setminus\{0\}$ existiert genau eine Zahl $y>0$ mit $y^k=x$.
+\end{theorem}
+\prove Sei dem Leser überlassen

@@ -6,7 +6,7 @@
 \RequirePackage[T1]{fontenc}
 
 % math stuff
-\RequirePackage{amsmath, amssymb, physics, siunitx, wasysym, amsthm, mathtools}
+\RequirePackage{amsmath, amssymb, derivative, siunitx, wasysym, amsthm, mathtools}
 
 % layout
 \RequirePackage[left=2cm, right=2cm, head=18pt, top=2cm, bottom=2cm,includefoot=true]{geometry}
@@ -77,9 +77,58 @@
 }
 
 
+% refs and include
+\RequirePackage{titlesec}
+\RequirePackage{titletoc}
+
+\titlecontents{part}
+  [0em]                                  % Kein linker Einzug
+  {\vspace{0.4ex}\bfseries}              % Deutlich kleinerer Abstand (0.4ex statt 1.5ex) und fette Schrift
+  {\thecontentslabel\quad}               % Kompakte Nummerierung (z.B. "1 ")
+  {}                                     % Wenn kein Label vorhanden ist
+  {\titlerule*[0.5pc]{.}\contentspage}   % Engere Leader-Punkte und Seitenzahl rechtsbündig
+  []     
+
+\renewcommand{\part}[1]{%
+  \clearpage
+  \refstepcounter{part}%
+  \addcontentsline{toc}{part}{#1}% Add to Master TOC
+  {\centering\Huge\bfseries #1\par}%
+  \vskip 40pt
+}
+
+\newcommand{\includemodule}[3]{
+\clearpage
+
+\setcounter{section}{0}
+\part{#2}
+#3
+%modulename and teachers
+\setcounter{page}{1}
+\startcontents[#1]
+\printcontents[#1]{}{1}[2]{}
+\clearpage
+\input{#1}
+\stopcontents[#1]
 
 
-% hyperref because changes things
+}
+
+\newcommand{\makemaintitlepage}{
+\pagestyle{empty}     
+\setcounter{tocdepth}{0}
+\tableofcontents
+\setcounter{tocdepth}{3}
+\section*{Anmerkungen}
+	Dieses Dokument wird die vollständige Sammlung . Wie leicht auffällt ist dieses Dokument in \LaTeX geschrieben. Darum und weil ich unfassbar faul bin, werde ich darauf verzichten, wenn auch bestimmt wunderschöne, Tikz-Abbildungen zu verwenden.
+	Im Folgenden werde ich \note{Notizen} wie zu sehen schreiben.
+    
+\clearpage
+}
+
 \RequirePackage{hyperref}
+\renewcommand{\theHsection}{\thepart.section.\thesection}
+
+
 
 \endinput

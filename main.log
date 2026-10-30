@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  28 OCT 2026 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  30 OCT 2026 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -122,34 +122,41 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
- (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/derivative/derivative.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-03-20 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count297
-))
-Package: xparse 2025-10-09 L3 Experimental document command parser
-)) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+Package: derivative 2024/02/08 v1.4 Nice and easy derivatives and differentials for LaTeX
+\l__deriv_gcd_counter_int=\count298
+\l__deriv_vmo_int=\count299
+\l__deriv_var_count_int=\count300
+\l__deriv_tmpa_int=\count301
+\l__deriv_tmpb_int=\count302
+\l__deriv_seq_pos_int=\count303
+\l__deriv_sort_max_int=\count304
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2026-04-15 v3.5.4 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count298
-\l__siunitx_number_exponent_fixed_int=\count299
-\l__siunitx_number_min_decimal_int=\count300
-\l__siunitx_number_min_integer_int=\count301
-\l__siunitx_number_round_precision_int=\count302
-\l__siunitx_number_lower_threshold_int=\count303
-\l__siunitx_number_upper_threshold_int=\count304
-\l__siunitx_number_group_first_int=\count305
-\l__siunitx_number_group_size_int=\count306
-\l__siunitx_number_group_min_int=\count307
-\l__siunitx_number_group_minimum_int=\count308
-\l__siunitx_compound_count_int=\count309
+\l__siunitx_number_uncert_offset_int=\count305
+\l__siunitx_number_exponent_fixed_int=\count306
+\l__siunitx_number_min_decimal_int=\count307
+\l__siunitx_number_min_integer_int=\count308
+\l__siunitx_number_round_precision_int=\count309
+\l__siunitx_number_lower_threshold_int=\count310
+\l__siunitx_number_upper_threshold_int=\count311
+\l__siunitx_number_group_first_int=\count312
+\l__siunitx_number_group_size_int=\count313
+\l__siunitx_number_group_min_int=\count314
+\l__siunitx_number_group_minimum_int=\count315
+\l__siunitx_compound_count_int=\count316
  (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count310
+\etb@tempcnta=\count317
 ) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -173,9 +180,9 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_table_after_box=\box60
 \l__siunitx_table_before_dim=\dimen163
 \l__siunitx_table_carry_dim=\dimen164
-\l__siunitx_unit_tmp_int=\count311
-\l__siunitx_unit_position_int=\count312
-\l__siunitx_unit_total_int=\count313
+\l__siunitx_unit_tmp_int=\count318
+\l__siunitx_unit_position_int=\count319
+\l__siunitx_unit_total_int=\count320
 \l__siunitx_sexagesimal_tmp_dim=\dimen165
 \l__siunitx_sexagesimal_marker_box=\box61
 \l__siunitx_sexagesimal_unit_box=\box62
@@ -215,20 +222,20 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count314
-\calc@Bcount=\count315
+\calc@Acount=\count321
+\calc@Bcount=\count322
 \calc@Adimen=\dimen168
 \calc@Bdimen=\dimen169
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count316
+\calc@Ccount=\count323
 \calc@Cskip=\skip61
 ) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count317
+\g_MT_multlinerow_int=\count324
 \l_MT_multwidth_dim=\dimen170
 \origjot=\skip62
 \l_MT_shortvdotswithinadjustabove_dim=\dimen171
@@ -244,9 +251,9 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count318
-\Gm@cntv=\count319
-\c@Gm@tempcnt=\count320
+\Gm@cnth=\count325
+\Gm@cntv=\count326
+\c@Gm@tempcnt=\count327
 \Gm@bindingoffset=\dimen178
 \Gm@wd@mp=\dimen179
 \Gm@odd@mp=\dimen180
@@ -260,16 +267,16 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count321
-\cp@tempcnt=\count322
+\c@cp@cntr=\count328
+\cp@tempcnt=\count329
 ) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip63
 \enit@outerparindent=\dimen186
 \enit@toks=\toks31
 \enit@inbox=\box66
-\enit@count@id=\count323
-\enitdp@description=\count324
+\enit@count@id=\count330
+\enitdp@description=\count331
 ) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2026/02/02 v3.49.2 KOMA-Script package (end user interface for scrlayer)
  (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -314,9 +321,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-\c@definition=\count325
-\c@theorem=\count326
-\c@lemma=\count327
+\c@definition=\count332
+\c@theorem=\count333
+\c@lemma=\count334
  (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
  (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -362,14 +369,14 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yd=\dimen256
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count328
-\c@pgf@countb=\count329
-\c@pgf@countc=\count330
-\c@pgf@countd=\count331
+\c@pgf@counta=\count335
+\c@pgf@countb=\count336
+\c@pgf@countc=\count337
+\c@pgf@countd=\count338
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count332
+\pgf@sys@id@count=\count339
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
@@ -380,21 +387,21 @@ File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count333
-\pgfsyssoftpath@bigbuffer@items=\count334
+\pgfsyssoftpath@smallbuffer@items=\count340
+\pgfsyssoftpath@bigbuffer@items=\count341
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen257
-\pgfmath@count=\count335
+\pgfmath@count=\count342
 \pgfmath@box=\box68
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count336
+\c@pgfmathroundto@lastzeros=\count343
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen258
@@ -424,7 +431,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box69
 \pgf@hbox=\box70
 \pgf@layerbox@main=\box71
-\pgf@picture@serial@count=\count337
+\pgf@picture@serial@count=\count344
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen276
@@ -445,8 +452,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen281
-\pgf@sys@shading@range@num=\count338
-\pgf@shadingcount=\count339
+\pgf@sys@shading@range@num=\count345
+\pgf@shadingcount=\count346
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -481,7 +488,7 @@ Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count340
+\pgf@plot@mark@count=\count347
 \pgfplotmarksize=\dimen286
 )
 \tikz@lastx=\dimen287
@@ -496,17 +503,17 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box75
 \tikz@tempbox=\box76
 \tikz@tempbox@bg=\box77
-\tikztreelevel=\count341
-\tikznumberofchildren=\count342
-\tikznumberofcurrentchild=\count343
-\tikz@fig@count=\count344
+\tikztreelevel=\count348
+\tikznumberofchildren=\count349
+\tikznumberofcurrentchild=\count350
+\tikz@fig@count=\count351
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count345
-\pgfmatrixcurrentcolumn=\count346
-\pgf@matrix@numberofcolumns=\count347
+\pgfmatrixcurrentrow=\count352
+\pgfmatrixcurrentcolumn=\count353
+\pgf@matrix@numberofcolumns=\count354
 )
-\tikz@expandcount=\count348
+\tikz@expandcount=\count355
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
@@ -523,9 +530,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box79
 \tcb@lowerbox=\box80
 \tcb@phantombox=\box81
-\c@tcbbreakpart=\count349
-\c@tcblayer=\count350
-\c@tcolorbox@number=\count351
+\c@tcbbreakpart=\count356
+\c@tcblayer=\count357
+\c@tcolorbox@number=\count358
 \l__tcobox_tmpa_box=\box82
 \l__tcobox_tmpa_dim=\dimen295
 \tcb@temp=\box83
@@ -552,6 +559,20 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box88
 \tcb@totalupperbox=\box89
 \tcb@totallowerbox=\box90
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box91
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen298
+\ttl@minus=\dimen299
+\ttl@toksa=\toks46
+\titlewidth=\dimen300
+\titlewidthlast=\dimen301
+\titlewidthfirst=\dimen302
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2025/01/04 v2.17 TOC entries
+\ttl@leftsep=\dimen303
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -571,13 +592,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count352
+\c@section@level=\count359
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen298
-\Hy@linkcounter=\count353
-\Hy@pagecounter=\count354
+\@linkdim=\dimen304
+\Hy@linkcounter=\count360
+\Hy@pagecounter=\count361
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -585,7 +606,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count355
+\Hy@SavedSpaceFactor=\count362
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -598,21 +619,21 @@ Package hyperref Info: Plain pages OFF on input line 4214.
 Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4466.
-\c@Hy@tempcnt=\count356
+\c@Hy@tempcnt=\count363
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4805.
-\XeTeXLinkMargin=\dimen299
+\XeTeXLinkMargin=\dimen305
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count357
-\Field@Width=\dimen300
-\Fld@charsize=\dimen301
+\Fld@menulength=\count364
+\Field@Width=\dimen306
+\Fld@charsize=\dimen307
 Package hyperref Info: Hyper figures OFF on input line 6091.
 Package hyperref Info: Link nesting OFF on input line 6096.
 Package hyperref Info: Hyper index ON on input line 6099.
@@ -620,15 +641,15 @@ Package hyperref Info: backreferencing OFF on input line 6106.
 Package hyperref Info: Link coloring OFF on input line 6111.
 Package hyperref Info: Link coloring with OCG OFF on input line 6116.
 Package hyperref Info: PDF/A mode OFF on input line 6121.
-\Hy@abspage=\count358
-\c@Item=\count359
-\c@Hfootnote=\count360
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
-\Fld@listcount=\count361
-\c@bookmark@seq@number=\count362
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -636,47 +657,35 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip65
+\Hy@SectionHShift=\skip67
 )) (./main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 8.
- (./modules/LINA.aux) (./modules/ANA.aux) (./modules/ALDAP.aux) (./modules/TM.aux) (./modules/THEOPHYS.aux) (./modules/ES.aux))
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-
-
-Package siunitx Warning: Detected the "physics" package:
-(siunitx)                omitting definition of \qty.
-(siunitx)                
-(siunitx)                If you want to use \qty with the siunitx definition,
-(siunitx)                add 
-(siunitx)                
-(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
-(siunitx)                
-(siunitx)                to your preamble.
-
-(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+ (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 13.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -714,139 +723,192 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen302
-\scratchbox=\box91
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen303
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count370
+\scratchdimen=\dimen308
+\scratchbox=\box92
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen309
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 15.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 16.
- (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-) (./main.toc)
+ (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-\openout2 = `modules/LINA.aux'.
-
- (./modules/LINA.tex
+\c@ttl@toc@modules/LINA.tex=\count376
+ (./main.ptc)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 	\item S
-             ymmetrische Differenz: $A \bigtriangleup B := (A \cup B)\setmin... [1
+l.19 ...dule{modules/LINA.tex}{Lineare Algebra}{a}
+                                                   [1
 
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] [4] [5]) [6]
-\openout2 = `modules/ANA.aux'.
 
- (./modules/ANA.tex [7
+] (./modules/LINA.tex [2
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4] [5] [6]) [7]
+\c@ttl@toc@modules/ANA.tex=\count377
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 	\includemodule{modules/ANA.tex}{Analysis}{a}
+                                                   [1
 
 
+] (./modules/ANA.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 \end{definition}
+                      [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \end{theorem}
+                   [3]
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[9]
 
-LaTeX Warning: Command \" invalid in math mode on input line 129.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 	      \begin{align*}
+                            [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 \end{theorem}
+                    [5])
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 ...thmen, Datenstrukturen, Programmierung}{a}
+                                                   [6]
+\c@ttl@toc@modules/ALDAP.tex=\count378
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 ...thmen, Datenstrukturen, Programmierung}{a}
+                                                   [1
 
-Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 129.
-
-Missing character: There is no ä in font cmr8!
-
-LaTeX Warning: Command \" invalid in math mode on input line 129.
-
-Missing character: There is no ä in font cmr8!
-
-LaTeX Warning: Command \" invalid in math mode on input line 129.
-
-Missing character: There is no ä in font cmr8!
-[10]) [11]
-\openout2 = `modules/ALDAP.aux'.
-
- (./modules/ALDAP.tex) [12
+] (./modules/ALDAP.tex)
+\c@ttl@toc@modules/TM.tex=\count379
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 ...le{modules/TM.tex}{Technische Mechanik}{a}
+                                                   [1
 
 
+
+] (./modules/TM.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...ules/THEOPHYS.tex}{Theoretische Physik}{a}
+                                                   [2
 
 ]
-\openout2 = `modules/TM.aux'.
+\c@ttl@toc@modules/THEOPHYS.tex=\count380
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...ules/THEOPHYS.tex}{Theoretische Physik}{a}
+                                                   [1
 
- (./modules/TM.tex) [13
 
-
+] (./modules/THEOPHYS.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...e{modules/ES.tex}{Eingebettete Systeme}{a}
+                                                   [2
 
 ]
-\openout2 = `modules/THEOPHYS.aux'.
-
- (./modules/THEOPHYS.tex) [14
-
-
-
-]
-\openout2 = `modules/ES.aux'.
-
- (./modules/ES.tex) [15
+\c@ttl@toc@modules/ES.tex=\count381
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...e{modules/ES.tex}{Eingebettete Systeme}{a}
+                                                   [1
 
 
+] (./modules/ES.tex)
+\tf@ptc=\write6
+\openout6 = `main.ptc'.
 
-] (./main.aux (./modules/LINA.aux) (./modules/ANA.aux) (./modules/ALDAP.aux) (./modules/TM.aux) (./modules/THEOPHYS.aux) (./modules/ES.aux))
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \end{document}
+                    [2
+
+] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 268B16A0B2C87EAC83853DB3F5C8E071;3112.
+(rerunfilecheck)             Checksum: 25561C1DDC1E40915DBE398AADB3E2D6;3183.
  ) 
 Here is how much of TeX's memory you used:
- 34041 strings out of 467363
- 730726 string characters out of 5419000
- 1182950 words of memory out of 6000000
- 62469 multiletter control sequences out of 15000+600000
- 645052 words of font info for 87 fonts, out of 8000000 for 9000
+ 36169 strings out of 467363
+ 809148 string characters out of 5419000
+ 1258080 words of memory out of 6000000
+ 64610 multiletter control sequences out of 15000+600000
+ 641748 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 139i,20n,135p,577b,1446s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on main.pdf (16 pages, 293003 bytes).
+ 139i,13n,135p,577b,1446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on main.pdf (21 pages, 288059 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 141 named destinations out of 1000 (max. 500000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
+ 133 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

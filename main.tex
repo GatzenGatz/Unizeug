@@ -3,34 +3,25 @@
 \usepackage{notestyle}
 
 % TODO SPlITING AND PROPER TITlING, Titling of custom box enviroments
-% Own Files for each subject, tableofcontents for main and then for each subject
 % proper titlepage
+% make prove better work as a whole environment
+% custom adds to modules
+% hidden course as solution for seperated course tocs
 
 \title{Mitschriften}
 \author{Maurice-León Schwinger}
 \date{}
 
 \begin{document}
-	{
-    \maketitle
-    \thispagestyle{empty}     
-    \pagestyle{empty}     
-	\tableofcontents
-	\section*{Anmerkungen}
-	Dieses Dokument wird die vollständige Sammlung . Wie leicht auffällt ist dieses Dokument in \LaTeX geschrieben. Darum und weil ich unfassbar faul bin, werde ich darauf verzichten, wenn auch bestimmt wunderschöne, Tikz-Abbildungen zu verwenden.
-	Im Folgenden werde ich \note{Notizen} wie zu sehen schreiben.
-    \thispagestyle{empty}
-    \clearpage
-}
 
-	\newpage
-	\setcounter{page}{1}
-	\include{modules/LINA.tex}
-	\include{modules/ANA.tex}
-	\include{modules/ALDAP.tex}
-	\include{modules/TM.tex}
-	\include{modules/THEOPHYS.tex}
-	\include{modules/ES.tex}
+	\makemaintitlepage
+
+	\includemodule{modules/LINA.tex}{Lineare Algebra}{a}
+	\includemodule{modules/ANA.tex}{Analysis}{a}
+	\includemodule{modules/ALDAP.tex}{Algorithmen, Datenstrukturen, Programmierung}{a}
+	\includemodule{modules/TM.tex}{Technische Mechanik}{a}
+	\includemodule{modules/THEOPHYS.tex}{Theoretische Physik}{a}
+	\includemodule{modules/ES.tex}{Eingebettete Systeme}{a}
 
 	
 \end{document}
