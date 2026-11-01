@@ -1,6 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{notestyle}
 
+%
+\title{Mitschriften}
+\author{Maurice-León Schwinger}
+
 % language
 \RequirePackage[ngerman]{babel}
 \RequirePackage[T1]{fontenc}
@@ -13,6 +17,7 @@
 \RequirePackage{setspace}
 \RequirePackage{changepage}
 \RequirePackage{enumitem}
+\RequirePackage{anyfontsize}
 
 \RequirePackage{scrlayer-scrpage}
 \clearscrheadfoot
@@ -92,9 +97,7 @@
 \renewcommand{\part}[1]{%
   \clearpage
   \refstepcounter{part}%
-  \addcontentsline{toc}{part}{#1}% Add to Master TOC
-  {\centering\Huge\bfseries #1\par}%
-  \vskip 40pt
+  \addcontentsline{toc}{part}{#1}
 }
 
 \newcommand{\includemodule}[3]{
@@ -102,8 +105,11 @@
 
 \setcounter{section}{0}
 \part{#2}
-#3
-%modulename and teachers
+%modulename and teacher
+{\Huge\bfseries #2}\\[0.3cm]
+{\large\bfseries #3}
+\vspace*{0.3cm}
+\hrule
 \setcounter{page}{1}
 \startcontents[#1]
 \printcontents[#1]{}{1}[2]{}
@@ -115,7 +121,14 @@
 }
 
 \newcommand{\makemaintitlepage}{
-\pagestyle{empty}     
+\pagestyle{empty}
+{\centering
+ \vspace*{2cm}
+ {\Huge\bfseries\@title}
+ \\[0.5cm]
+ {\large \@author}
+ 
+}     
 \setcounter{tocdepth}{0}
 \tableofcontents
 \setcounter{tocdepth}{3}
