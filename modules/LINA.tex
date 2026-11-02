@@ -253,3 +253,40 @@ Weiter:
 \begin{theorem}
 	(Cantor) Für jede Menge $A$ ist $|A| < |\mathcal{P}(A)|$.
 \end{theorem}
+\prove 
+\begin{itemize}
+	\item injektiv: Sei $A$ Menge. Dann ist $A\to \mathcal{P}, a \mapsto \{a\}$ injektiv. Also $|A|\leq |\mathcal{P}(A)|$
+	\item nicht bijektiv: Angenommen, $|A|=|\mathcal{P}(A)|$. Insbesondere gibt es eine surjektive Abbildung $f: A \to \mathcal{P}(A)$. Betrachte $B:=\{x\in A\mid x \not\in f(x)\} \in \mathcal{P}(A)$. Da $f$ surjektiv, existiert $b \in A$ mit $f(b)=B$. Nun entweder $b\in B$ oder $b\not\in B$ \lightning. Somit $|A|\neq|\mathcal{P}(A)|$ und daher $|A| < |\mathcal{P}(A)|$.
+\end{itemize}
+\begin{theorem}[Bernstein-Schröder]
+	Für beliebige Mengen $A$ und $B$ gilt: Ist $|A|\leq |B|$ und $|B|\leq |A|$, dann $|A|=|B|$.
+\end{theorem}
+\prove Siehe Bücher
+\paragraph{Bemerkung} Sei $f: A\to B$ eine Abbildung.
+\begin{enumerate}
+	\item $f$ bijektiv $\iff \exists g: B\to A: g\circ f=\mathrm{id}_A, f\circ g=\mathrm{id}_B$. In diesem Fall ist $g=f^{-1}$.
+	\item Falls $A \neq \emptyset$, dann: $f$ injektiv $\iff \exists g:B\to A: g\circ f=\mathrm{id}_A$
+\end{enumerate}
+\subsection{Auswahlaxiom}
+Eine zum Vorherigen analoge Beschreibung surjektiver Abbildungen (die man in der ZF-Axiomatik nicht beweisen kann) bildet den Kern eines weiteren mengentheoretischen Axioms:\\
+Für jede surjektive Abbildung $f: A\to B$ existiert eine Abbildung $g: B\to A$ mit $f\circ g=\mathrm{id}_B$ 
+\subsection{Beweisprinzipien}
+$A\implies B$
+\begin{itemize}
+	\item Direkter Beweis $A\implies B$
+	\item Indirekter Beweis $((\neg B)\implies (\neg A))$
+\end{itemize}
+Ringschluss, Vollständige Induktion
+\section{Körper}
+\begin{definition}[Gruppe]
+	Ein Paar $(G, \cdot)$ bestehend aus einer Menge $G$ und einer Abbildung $\cdot: G\times G\to G$ heißt Gruppe, falls folgende Axiome erfüllt sind:
+	\begin{enumerateroman}
+	\item Assoziativität
+	\item Neutrales Element
+	\item Inverses Element
+	\end{enumerateroman}
+\end{definition}
+\begin{definition}[abelsche Gruppe]
+	Gruppe $(G, \cdot)$ heißt abelsch, falls zusätzlich Kommutativität
+\end{definition}
+Sei $X$ Menge und $\mathrm{Sym}(X):=\{f\in X^x|f \text{ bijektiv}\}$, d.h. die Menge aller bijektiven Abbildungen von $X$ nach $X$. Dann ist $(\mathrm{Sym}(X), \cdot)$ eine Gruppe, die sogenannte (volle) symmetrische Gruppe über $X$. 

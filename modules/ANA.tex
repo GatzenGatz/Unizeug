@@ -176,3 +176,45 @@ Schreibweise kein Supremum/ Infimum: $\pm \infty$
 	Zu jedem $x\in \R, x>0$ und $k\in\N\setminus\{0\}$ existiert genau eine Zahl $y>0$ mit $y^k=x$.
 \end{theorem}
 \prove Sei dem Leser überlassen
+\section{Komplexe Zahlen}
+\begin{definition}
+	Die Menge $\C=\{(x,y)\mid x,y\in\R\}$ versehen mit den Rechenoperationen
+	\begin{align*}
+		(x,y)\oplus (u,v) &=(x+u, y+v)\\
+		(x,y)\odot (u,v) =(xu-yv,xv+yu)
+	\end{align*}
+	heißt Menge der komplexen Zahlen.
+\end{definition}
+\begin{align*}
+	z=x+iys
+\end{align*}
+Der Körper der komplexen Zahlen besitzt keine Ordnung, welche die Ordnungsaxiome erfüllt. 
+\begin{definition}
+	Für eine komplexe Zahl $z=x+iy$ bezeichnet
+	\begin{itemize}
+		\item $|z|=\sqrt{x^2+y^2}$ den Betrag
+		\item $\bar{z}=x-iy$ das komplex Konjugierte
+		\item $\Re{z}=x$ Realteil, $\Im{z}=y$ Imaginärteil
+	\end{itemize}
+\end{definition}
+\paragraph{Bemerkung}
+\begin{align*}
+	z\cdot \bar{z} &= |z|^2\\
+	\bar{z_1}+\bar{z_2}&=\overline{z_1+z_2}\\
+	\bar{z_1}\cdot \bar{z_2}&=\overline{z_1\cdot z_2}\\
+	z+\bar{z}&=2\Re{z}\\
+	z-\bar{z}&=2i\Im{z}\\
+	|z_1|\cdot |z_2|&=|z_1 \cdot z_2|
+\end{align*}
+\begin{theorem}[Dreiecksungleichung]
+	Für $u,v,w \in \C$ gilt:
+		\begin{enumerateroman}
+			\item $|u+v|\leq |u|+|v|$
+			\item $|u-v|\leq |u-w|+|w-v|$
+			\item $||u|-|v||\leq |u\pm v| \leq |u|+|v|$
+		\end{enumerateroman}
+\end{theorem}
+\prove
+\begin{enumerateroman}
+	\item $|u+v|^2=(u+v)\overline{(u+v)}=|u|^2+|v|^2+2\Re{u\bar{v}}\leq |u|^2+|v|^2+2|uv|=(|u|+|v|)^2$
+\end{enumerateroman}

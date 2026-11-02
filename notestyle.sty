@@ -19,11 +19,6 @@
 \RequirePackage{enumitem}
 \RequirePackage{anyfontsize}
 
-\RequirePackage{scrlayer-scrpage}
-\clearscrheadfoot
-\ofoot{\pagemark}
-\ohead{}
-
 \setlength{\parindent}{0pt}
 
 \RequirePackage{xcolor}
@@ -38,6 +33,9 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\K}{\mathbb{K}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\Re}[1]{\operatorname{Re}(#1)}
+\renewcommand{\Im}[1]{\operatorname{Im}(#1)}
 
 % amsthm-environments
 \theoremstyle{definition}
@@ -110,10 +108,10 @@
 {\large\bfseries #3}
 \vspace*{0.3cm}
 \hrule
-\setcounter{page}{1}
 \startcontents[#1]
 \printcontents[#1]{}{1}[2]{}
 \clearpage
+\setcounter{page}{1}
 \input{#1}
 \stopcontents[#1]
 
@@ -141,6 +139,11 @@
 
 \RequirePackage{hyperref}
 \renewcommand{\theHsection}{\thepart.section.\thesection}
+
+\RequirePackage{scrlayer-scrpage}
+\clearscrheadfoot
+\ofoot{\pagemark}
+\ohead{}
 
 
 
