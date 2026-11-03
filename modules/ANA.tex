@@ -1,4 +1,5 @@
-\section{Zahlensysteme}
+\section{Grundlagen}
+\subsection{Zahlensysteme}
 \begin{definition}
 	Seien $X, Y$ zwei Mengen, dann ist die Menge aller geordneten Paare $(x,y)$ von Elementen $x \in X, y \in Y$ das kartesische Produkt $X \times Y$
 \end{definition}
@@ -107,7 +108,7 @@ Rechenregeln ableiten.
 	\item Gibt es die reellen Zahlen überhaupt?
 	\item Sind die reellen Zahlen eindeutig
 \end{enumerate}
-\section{Supremum und Infimum}
+\subsection{Supremum und Infimum}
 \begin{definition}
 	Sei $A\subset \R$ ein nichtleere Teilemenge, dann heißt $x \in \R$
 	\begin{itemize}
@@ -176,7 +177,7 @@ Schreibweise kein Supremum/ Infimum: $\pm \infty$
 	Zu jedem $x\in \R, x>0$ und $k\in\N\setminus\{0\}$ existiert genau eine Zahl $y>0$ mit $y^k=x$.
 \end{theorem}
 \prove Sei dem Leser überlassen
-\section{Komplexe Zahlen}
+\subsection{Komplexe Zahlen}
 \begin{definition}
 	Die Menge $\C=\{(x,y)\mid x,y\in\R\}$ versehen mit den Rechenoperationen
 	\begin{align*}
@@ -218,3 +219,37 @@ Der Körper der komplexen Zahlen besitzt keine Ordnung, welche die Ordnungsaxiom
 \begin{enumerateroman}
 	\item $|u+v|^2=(u+v)\overline{(u+v)}=|u|^2+|v|^2+2\Re{u\bar{v}}\leq |u|^2+|v|^2+2|uv|=(|u|+|v|)^2$
 \end{enumerateroman}
+\section{Folgen und Reihen}
+\begin{definition}[Zahlenfolge]
+	Eine Zahlenfolge ist eine Abbildung von $\N \to \C (\R)$ $n\mapsto a_n$. Jedem $n \in \N$ wird ein $a_n \in \C$ oder $a_n \in \R$ zugeordnet.
+\end{definition}
+$(a_n)_{n\in \N}$ oder $a_1, a_2, \dots$
+\begin{definition}
+	Eine Folge $(a_n)$ heißt
+	\begin{itemize}
+		\item beschränkt $\iff \exists c\in \R: |a_n|\leq c\quad \forall n \in \N$
+		\item oben beschränkt $a_n\leq c$
+		\item unten beschränkt $a_n \geq c$
+		\item $\sup a_n = \sup\{a_n\mid n\in \N\}$
+		\item $\inf a_n = \inf\{a_n\mid n\in \N\}$
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	Eine Zahl $a \in \C$ heißt Grenzwert einer Folge $(a_n)$, falls 
+	\begin{align*}
+		\forall \varepsilon \in \C, \varepsilon > 0, \exists n_0 \in \N: \forall n \geq n_0: |a_n-a|<\varepsilon 
+	\end{align*}
+\end{definition}
+Eine Folge heißt konvergent, falls sie einen Grenzwert hat. Ansonsten hei0t sie divergent.
+\begin{align*}
+	\lim_{n\to \infty} a_n = a
+\end{align*}
+Nullfolge
+\begin{definition}
+	Sei $\varepsilon>0$. Die Menge $U_{\varepsilon}=\{z\in \C\mid |z-a| < \varepsilon\}$ heißt $\varepsilon$-Umgebung von $a$.
+\end{definition}
+\paragraph{Bemerkung} $\varepsilon$-Umgebung, fast alle enthalten
+\begin{theorem}
+	Der Grenzwert einer konvergenten Zahlenfolge ist eindeutig.
+\end{theorem}
+\prove Sei dem Leser überlassen
