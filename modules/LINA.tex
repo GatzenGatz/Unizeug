@@ -278,6 +278,7 @@ $A\implies B$
 \end{itemize}
 Ringschluss, Vollständige Induktion
 \section{Körper}
+\subsection{Gruppe}
 \begin{definition}[Gruppe]
 	Ein Paar $(G, \cdot)$ bestehend aus einer Menge $G$ und einer Abbildung $\cdot: G\times G\to G$ heißt Gruppe, falls folgende Axiome erfüllt sind:
 	\begin{enumerateroman}
@@ -289,4 +290,63 @@ Ringschluss, Vollständige Induktion
 \begin{definition}[abelsche Gruppe]
 	Gruppe $(G, \cdot)$ heißt abelsch, falls zusätzlich Kommutativität
 \end{definition}
-Sei $X$ Menge und $\mathrm{Sym}(X):=\{f\in X^x|f \text{ bijektiv}\}$, d.h. die Menge aller bijektiven Abbildungen von $X$ nach $X$. Dann ist $(\mathrm{Sym}(X), \cdot)$ eine Gruppe, die sogenannte (volle) symmetrische Gruppe über $X$. 
+Sei $X$ Menge und $\mathrm{Sym}(X):=\{f\in X^x \mid f \text{ bijektiv}\}$, d.h. die Menge aller bijektiven Abbildungen von $X$ nach $X$. Dann ist $(\mathrm{Sym}(X), \cdot)$ eine Gruppe, die sogenannte (volle) symmetrische Gruppe über $X$. 
+\subsection{Körper}
+\begin{definition}
+	Ein Tripel $(\K, +, \cdot)$ mit
+	\begin{itemize}
+		\item $+$: $\K\times \K\to \K, (x,y)\mapsto x+y$
+		\item $\cdot$: $\K\times \K\to \K, (x,y)\mapsto xy$
+	\end{itemize}
+	derart, dass Folgende Eigenschaften gelten:
+	\begin{itemize}
+		\item $(\K,+)$ abelsche Gruppe mit Nullelement $0_{\K}$
+		\item $(\K\setminus 0, \cdot)$ abelsche Gruppe mit Einselelement $1_{\K}$
+		\item $0_{\K}\neq 1_{\K}$ 
+		\item Distributivität
+	\end{itemize}
+\end{definition}
+\paragraph{Folgerungen}
+\begin{itemize}
+	\item $0\cdot a=0$
+	\item $(-1)a=-a$
+	\item $(-a)(-b)=ab$
+	\item $ab=0\iff a=0\lor b=0$
+\end{itemize}
+\subsection{Restklassenarithmetik}
+\begin{definition}
+	Sei $n\in \N^+$:\\
+	$\equiv_n$ definiert auf $\Z$ eine Äquivalenzrelation 
+	\begin{align*}
+		x \equiv_n y \iff x \equiv y\ \mod n \iff n|(x-y)
+	\end{align*}
+	Für $x\in \Z$ heißt die Äquivalenzklasse
+	\begin{align*}
+		[x]_{\mod n}:=\{y\in \Z\mid x\equiv y\ \mod n\}
+	\end{align*}
+	die Restklasse (oder auch Kongruenzklasse) von von $x$ modulo $n$.\\[0.2cm]
+	Menge aller Restklassen: $\Z/(\mod n)$
+\end{definition}
+\begin{itemize}
+	\item Addition: $[x]\oplus\ [y]:=[x+y]$
+	\item Multiplikation: $[x]\odot\ [y]:=[x\cdot y]$
+\end{itemize}
+\paragraph{Bemerkung} Man musss beweisen, dass diese Operationen `wohldefiniert' sind $\iff$ Zuordnungen sind nicht abhängig von der Auswahl der Reprösentanten der jeweiligen Kongruenzklasse!
+\paragraph{Alternative Methode} Teilen mit Rest \begin{align*}
+	\forall x \in \Z \exists!(k,r)\in \Z\times \Z_n: x = kn+r 
+\end{align*}
+Bezeichnung: $x\ \mod n := r$ 
+\begin{align*}
+	\forall x,y \in \Z: x\equiv y \mod n \iff x \mod n = y \mod n
+\end{align*}
+\paragraph{Addition und Multiplikation auf $\Z_n$}
+\begin{align*}
+	x\oplus y&:= (x+y\mod n)\\
+	x\odot y&:= (x\cdot y\mod n)
+\end{align*}
+Die Abbildung $\phi: \Z_n\to \Z/(\mod n), x \mapsto [x]_{\mod n}$ ist eine Bijektion für $x \in \Z$.\\
+$\forall x,y \in \Z_n$:
+\begin{align*}
+	\phi(x+y)&=\phi(x)\oplus\phi(y)\\
+	\phi(x\cdot y)&=\phi(x)\odot\phi(y)
+\end{align*}

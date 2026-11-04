@@ -47,7 +47,7 @@
 		\item Monotonie bzgl. der Addition $\forall x,y,z \in X: x <y\implies x+z< y+z$
 		\item Monotonie bzgl. der Multiplikation $\forall x,y,z \in X$ mit $z>0$:
 		$x<y\implies x\cdot z<y\cdot z$
-		\item archimedische Ordnung: Zu $a,b > 0 \exists n \in \N: b<\sum\limits_{i=1}^{n}a$
+		\item archimedische Ordnung: Zu $a,b > 0 \exists n \in \N: b<\sum\limits_{i=1}^{n}a=n\cdot a$
 	\end{enumerateroman}
 \end{definition}
 \begin{theorem}
@@ -89,13 +89,13 @@ Rechenregeln ableiten.
 	Sei $(X,+,\cdot)$ ein archimedisch angeordneter Körper. Dann gilt
 	\begin{enumerateroman}
 		\item $b>1, M>0, \exists n\in \N: b^n>M$
-		\item $0<q<1, \forall\varepsilon>0, \exists n\in N: q^n<\varepsilon$
+		\item $0<q<1, \forall\epsilon>0, \exists n\in N: q^n<\epsilon$
 	\end{enumerateroman}
 \end{theorem}
 \prove
 \begin{enumerateroman}
 	\item $x=b-1>0$. Mit $b^n=(x+1)^n\geq 1+nx$. $\exists n\in \N:n\cdot x>M\implies b^n>M$
-	\item $b=q^{-1}>1$, dann $\exists n\in \N$. $b^n>\frac{1}{\varepsilon} \implies q^n>\varepsilon$
+	\item $b=q^{-1}>1$, dann $\exists n\in \N$. $b^n>\frac{1}{\epsilon} \implies q^n>\epsilon$
 \end{enumerateroman}
 \begin{definition}[Ordnungsvollständigkeit]
 	Seien $A,B\subset X$ zwei nichtleere Mengen, so dass $\forall a\in A, b\in B: a\leq b$. Dann $\exists c\in X: \forall a\in A, b \in B: a\leq c\leq b$
@@ -142,7 +142,7 @@ Schreibweise kein Supremum/ Infimum: $\pm \infty$
 	Eine Zahl $x\in \R$ ist genau dann Supremum der nach oben beschränkten Menge $A$, wenn sie die folgenden Eigenschaften besitzt:
 	\begin{enumerateroman}
 		\item $\forall a\in A: x \geq a$
-		\item $\forall \varepsilon > 0 \exists a \in A: a+\varepsilon > x$
+		\item $\forall \epsilon > 0, \exists a \in A: a+\epsilon > x$
 	\end{enumerateroman}
 \end{theorem}
 \prove \
@@ -150,17 +150,17 @@ Schreibweise kein Supremum/ Infimum: $\pm \infty$
 	\item[$\Rightarrow$]
 	      \begin{enumerateroman}
 		      \item nach Definition erfüllt
-		      \item Angenommen gilt nicht, d.h. $\exists\varepsilon>0\forall a\in A: a+\varepsilon
-			      \leq x\implies \forall a \in A: a \leq x-\varepsilon$ \lightning
+		      \item Angenommen gilt nicht, d.h. $\exists\epsilon>0\forall a\in A: a+\epsilon
+			      \leq x\implies \forall a \in A: a \leq x-\epsilon$ \lightning
 	      \end{enumerateroman}
-	\item[$\Leftarrow$] Dann ist $x$ obere Schranke von $A$.\\ Angenommen $y<x$ wäre kleinere obere Schranke. Mit $\varepsilon=x-y$ und $\forall a \in A$ gilt \begin{align*}
-		      a+\varepsilon=a+x-y
+	\item[$\Leftarrow$] Dann ist $x$ obere Schranke von $A$.\\ Angenommen $y<x$ wäre kleinere obere Schranke. Mit $\epsilon=x-y$ und $\forall a \in A$ gilt \begin{align*}
+		      a+\epsilon=a+x-y
 	      \end{align*}
-	      Da $a<y\implies a-y<0\implies a+\varepsilon\leq x$\lightning
+	      Da $a<y\implies a-y<0\implies a+\epsilon\leq x$\lightning
 \end{itemize}
 
 \begin{theorem}[Intervallschachtellung]
-	Es sei $I_n=[a_n, b_n], n\in \N$ ein System von Intervallen mit $I_{n+1}\subset I_n$. Dann ist $\bigcap_{n\in \N}I_n=\{x\in \R\mid x\in I_n \forall n\in \N\}$ nicht leer, d.h. $\exists c \in \R$ mit $a_n\leq c\leq b_n \forall n \in \N$. Existiert zu jedem $\varepsilon >0$ ein $n\in\N$ mit $b_n-a_n<\varepsilon$, dann gilt $\bigcap_{n\in\N} I_n = \{c\}$. $I_n$ heißt dann Intervallschachtellung zu der Zahl $c$.
+	Es sei $I_n=[a_n, b_n], n\in \N$ ein System von Intervallen mit $I_{n+1}\subset I_n$. Dann ist $\bigcap_{n\in \N}I_n=\{x\in \R\mid x\in I_n \forall n\in \N\}$ nicht leer, d.h. $\exists c \in \R$ mit $a_n\leq c\leq b_n \forall n \in \N$. Existiert zu jedem $\epsilon >0$ ein $n\in\N$ mit $b_n-a_n<\epsilon$, dann gilt $\bigcap_{n\in\N} I_n = \{c\}$. $I_n$ heißt dann Intervallschachtellung zu der Zahl $c$.
 \end{theorem}
 \paragraph{Bemerkung} Es ist wichtig, dass die Intervalle abgeschlossen sind. \prove \begin{itemize}
 	\item Existenz: Wir setzen $A=\{a_n\mid n\in \N\}, B=\{b_n\mid n\in \N\}$. Dann gilt
@@ -169,8 +169,8 @@ Schreibweise kein Supremum/ Infimum: $\pm \infty$
 		      c\leq b \forall a\in A,b\in B\implies c \in[a_n,b_n] \forall n \in N \implies c
 		      \in \bigcap_{n\in\N} I_n$
 	\item Eindeutigkeit: Angenommen $c,\tilde{c}\in\bigcap_{n\in\N}I_n$ und $c\neq
-		      \tilde{c}$. Setze für jedes $c< \tilde{c}, \varepsilon =\tilde{c}-c>0$. Nach
-	      Vorraussetzung $\exists n\in\N: b_n-a_n<\varepsilon$\lightning zu $a_n\leq
+		      \tilde{c}$. Setze für jedes $c< \tilde{c}, \epsilon =\tilde{c}-c>0$. Nach
+	      Vorraussetzung $\exists n\in\N: b_n-a_n<\epsilon$\lightning zu $a_n\leq
 		      c<\tilde{c}\leq b_n$
 \end{itemize}
 \begin{theorem}
@@ -237,7 +237,7 @@ $(a_n)_{n\in \N}$ oder $a_1, a_2, \dots$
 \begin{definition}
 	Eine Zahl $a \in \C$ heißt Grenzwert einer Folge $(a_n)$, falls 
 	\begin{align*}
-		\forall \varepsilon \in \C, \varepsilon > 0, \exists n_0 \in \N: \forall n \geq n_0: |a_n-a|<\varepsilon 
+		\forall \epsilon \in \C, \epsilon > 0, \exists n_0 \in \N: \forall n \geq n_0: |a_n-a|<\epsilon 
 	\end{align*}
 \end{definition}
 Eine Folge heißt konvergent, falls sie einen Grenzwert hat. Ansonsten hei0t sie divergent.
@@ -246,9 +246,9 @@ Eine Folge heißt konvergent, falls sie einen Grenzwert hat. Ansonsten hei0t sie
 \end{align*}
 Nullfolge
 \begin{definition}
-	Sei $\varepsilon>0$. Die Menge $U_{\varepsilon}=\{z\in \C\mid |z-a| < \varepsilon\}$ heißt $\varepsilon$-Umgebung von $a$.
+	Sei $\epsilon>0$. Die Menge $U_{\epsilon}=\{z\in \C\mid |z-a| < \epsilon\}$ heißt $\epsilon$-Umgebung von $a$.
 \end{definition}
-\paragraph{Bemerkung} $\varepsilon$-Umgebung, fast alle enthalten
+\paragraph{Bemerkung} $\epsilon$-Umgebung, fast alle enthalten
 \begin{theorem}
 	Der Grenzwert einer konvergenten Zahlenfolge ist eindeutig.
 \end{theorem}

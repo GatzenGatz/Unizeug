@@ -36,6 +36,19 @@
 \newcommand{\C}{\mathbb{C}}
 \renewcommand{\Re}[1]{\operatorname{Re}(#1)}
 \renewcommand{\Im}[1]{\operatorname{Im}(#1)}
+\renewcommand{\mod}{\mathop{\mathrm{mod}}\ }
+\let\oldexists\exists
+\renewcommand{\exists}{\mathop{\oldexists}\nolimits}
+\let\oldforall\forall
+\renewcommand{\forall}{\mathop{\oldforall}\nolimits}
+\let\oldvarphi\varphi
+\let\oldphi\phi
+\let\oldvarepsilon\varepsilon
+\let\oldepsilon\epsilon
+\renewcommand{\epsilon}{\oldvarepsilon}
+\renewcommand{\phi}{\oldvarphi}
+\renewcommand{\varepsilon}{\oldepsilon}
+\renewcommand{\varphi}{\oldphi}
 
 % amsthm-environments
 \theoremstyle{definition}
