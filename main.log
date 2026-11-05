@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  4 NOV 2026 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  5 NOV 2026 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,7 +873,7 @@ l.16 ...n, Programmierung}{Prof. Bastian Pfleging}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 ...{Technische Mechanik}{Prof. Ulrich Römer}
+l.17 ... Römer, Thomas Krüger, Florian Tuschner}
                                                    [1
 
 
@@ -882,7 +882,7 @@ l.17 ...{Technische Mechanik}{Prof. Ulrich Römer}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...x}{Theoretische Physik}{Prof. Jens Kortus}
+l.18 ...ik}{Prof. Jens Kortus, Cameliu Himcinschi}
                                                    [1
 
 ]
@@ -891,7 +891,7 @@ l.18 ...x}{Theoretische Physik}{Prof. Jens Kortus}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...x}{Theoretische Physik}{Prof. Jens Kortus}
+l.18 ...ik}{Prof. Jens Kortus, Cameliu Himcinschi}
                                                    [2
 
 
@@ -934,13 +934,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  36286 strings out of 467363
  811816 string characters out of 5419000
- 1261859 words of memory out of 6000000
+ 1261858 words of memory out of 6000000
  64672 multiletter control sequences out of 15000+600000
  643942 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,20n,135p,577b,1451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,20n,135p,578b,1451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on main.pdf (25 pages, 327513 bytes).
+Output written on main.pdf (25 pages, 328034 bytes).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)
  465 compressed objects within 5 object streams
