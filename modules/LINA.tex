@@ -293,16 +293,16 @@ Ringschluss, Vollständige Induktion
 Sei $X$ Menge und $\mathrm{Sym}(X):=\{f\in X^x \mid f \text{ bijektiv}\}$, d.h. die Menge aller bijektiven Abbildungen von $X$ nach $X$. Dann ist $(\mathrm{Sym}(X), \cdot)$ eine Gruppe, die sogenannte (volle) symmetrische Gruppe über $X$. 
 \subsection{Körper}
 \begin{definition}
-	Ein Tripel $(\K, +, \cdot)$ mit
+	Ein Tripel $\K$ $(K, +, \cdot)$ mit
 	\begin{itemize}
-		\item $+$: $\K\times \K\to \K, (x,y)\mapsto x+y$
-		\item $\cdot$: $\K\times \K\to \K, (x,y)\mapsto xy$
+		\item $+$: $K\times K\to K, (x,y)\mapsto x+y$
+		\item $\cdot$: $K\times K\to K, (x,y)\mapsto xy$
 	\end{itemize}
 	derart, dass Folgende Eigenschaften gelten:
 	\begin{itemize}
-		\item $(\K,+)$ abelsche Gruppe mit Nullelement $0_{\K}$
-		\item $(\K\setminus 0, \cdot)$ abelsche Gruppe mit Einselelement $1_{\K}$
-		\item $0_{\K}\neq 1_{\K}$ 
+		\item $(K,+)$ abelsche Gruppe mit Nullelement $0_{K}$
+		\item $(K\setminus 0, \cdot)$ abelsche Gruppe mit Einselelement $1_{K}$
+		\item $0_{K}\neq 1_{K}$ 
 		\item Distributivität
 	\end{itemize}
 \end{definition}
@@ -364,3 +364,40 @@ $\phi$ $(\Z_n, +, \cdot)$ $\to$ $\phi$ $(\Z_{\mod n}, \oplus, \odot)$ ist ein Is
 \end{itemize}
 \subsection{Der Körper der Komplexen Zahlen}
 Konstruktion mittels Tupel $(x,y)\in \R^2$ sowie den Verknüpfungen $\odot$ und $\oplus$ sei dem Leser überlassen.
+\begin{align*}
+	\C := \{a+bi \mid a,b\in \R\}
+\end{align*}
+Die Menge $\C$ bildet mit den vorangegangenen Verknüpfung $\oplus$ und $\odot$ den `Körper der komplexen Zahlen' $(\C, \oplus, \odot)$.\\
+Operationen in $\C$:
+\begin{itemize}
+	\item $\Re(z)=a$ Realteil
+	\item $\Im(z)=b$ Imaginärteil
+\end{itemize}
+Jede reelle Zahl $a\in\R$ ist als komplexe $a+0i\in\C$ zu versthen. Darum schreibt man $\R \subset \C$. Das heißt wir identifizieren die Menge $\R$ mit ihrem Bild unter der Injektion $\R\to\C,a\mapsto a+bi$.
+\section{Vektorräume} 
+\begin{definition}
+	Jeden Vektroräume liegt ein Körper $\K$ $(K,+,\cdot)$ zugrunde. Die Elemente von $\K$ heißen oft Skalare.
+\end{definition}
+\subsection{Vektorraum}
+\begin{definition}
+	Sei $\K$ Körper. Vektorraum über $\K$ (Kurz $\K$-Vektorraum) ist eine Menge $V$ mit zwei Abbildungen
+	\begin{itemize}
+		\item Addition: $V\times V \to V, (u,v)\mapsto u+v$
+		\item Skalarmultiplikation: $\K\times V \to V, (\lambda, v)\mapsto \lambda v$
+	\end{itemize}
+	derart, dass folgende Axiome erfüllt sind:
+	\begin{enumerateroman}
+		\item $(V,+)$ abelsche Gruppe
+		\item $\forall \lambda, \mu \in \K \forall v\in V: (\lambda \cdot \mu)\cdot v = \lambda \cdot (\mu \cdot v)$
+		\item $\forall v \in V:1v=v$
+		\item $\forall \lambda \in \K \forall u,v \in V: \lambda \cdot (u+v) = \lambda u + \lambda v$
+		\item $\forall \lambda, \mu \in \K \forall v \in V: (\lambda+\mu)\cdot v = \lambda v + \mu v$
+	\end{enumerateroman}
+	Vektor: Element von $V$
+\end{definition}
+\begin{example}[Vektorraum $\K^n$]
+Sei $\K$ Körper und $n\in \N$. Die Menge $\K^n$ aller $n$-Tupel bildet einen $\K$-VR.	
+\end{example}
+\begin{example}[Vektorräume aus Körpererweiterungen]
+	Sei $\K$ Körper. $L\subseteq \K$ heißt Unterkörper (auch Teilkörper) von $\K$. Man schreibt dann $L \leq \K$, sofern 
+\end{example}

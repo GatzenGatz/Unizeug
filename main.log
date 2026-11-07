@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  5 NOV 2026 01:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  7 NOV 2026 01:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,7 +681,7 @@ Package scrlayer-scrpage Warning: It seems that package `titlesec' is used
 )
 
 Package scrlayer-scrpage Warning: replacing deprecated \clearscrheadfoot by
-(scrlayer-scrpage)                \clearpairofpagestyles on input line 159.
+(scrlayer-scrpage)                \clearpairofpagestyles on input line 166.
 
 ) (./main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
@@ -810,9 +810,13 @@ Overfull \hbox (11.91545pt too wide) in paragraph at lines 271--273
 \T1/cmr/m/n/12 Eine zum Vor-he-ri-gen ana-lo-ge Be-schrei-bung sur-jek-ti-ver Ab-bil-dun-gen (die man in der ZF-Axiomatik
  []
 
-[7] [8]) [9]
+[7] [8] [9]
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 397.
+
+) [10]
 \c@ttl@toc@modules/ANA.tex=\count377
- (./main.ptc) [10
+ (./main.ptc) [11
 
 
 ] (./modules/ANA.tex
@@ -929,21 +933,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 77ACF368E24AE2CB70B6FD2827A6C202;4681.
+(rerunfilecheck)             Checksum: 822DD23A7B39A7629EE9D4EA52A33FD3;4927.
  ) 
 Here is how much of TeX's memory you used:
- 36286 strings out of 467363
- 811816 string characters out of 5419000
- 1261858 words of memory out of 6000000
- 64672 multiletter control sequences out of 15000+600000
+ 36306 strings out of 467363
+ 812076 string characters out of 5419000
+ 1261901 words of memory out of 6000000
+ 64682 multiletter control sequences out of 15000+600000
  643942 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  138i,20n,135p,578b,1451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on main.pdf (25 pages, 328034 bytes).
+Output written on main.pdf (26 pages, 349348 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 181 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
