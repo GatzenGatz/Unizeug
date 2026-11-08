@@ -39,7 +39,8 @@
 \contentsline {subsection}{\numberline {2.4}Der Körper der Komplexen Zahlen}{9}{subsection.I.section.2.4}%
 \contentsline {section}{\numberline {3}Vektorräume}{9}{section.I.section.3}%
 \contentsline {subsection}{\numberline {3.1}Vektorraum}{9}{subsection.I.section.3.1}%
-\contentsline {part}{Analysis}{11}{part.2}%
+\contentsline {subsection}{\numberline {3.2}Funktionenräume}{10}{subsection.I.section.3.2}%
+\contentsline {part}{Analysis}{12}{part.2}%
 \contentsline {section}{\numberline {1}Grundlagen}{1}{section.II.section.1}%
 \contentsline {subsection}{\numberline {1.1}Zahlensysteme}{1}{subsection.II.section.1.1}%
 \contentsline {paragraph}{Beweis}{1}{paragraph*.23}%

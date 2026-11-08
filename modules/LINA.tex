@@ -399,5 +399,43 @@ Jede reelle Zahl $a\in\R$ ist als komplexe $a+0i\in\C$ zu versthen. Darum schrei
 Sei $\K$ Körper und $n\in \N$. Die Menge $\K^n$ aller $n$-Tupel bildet einen $\K$-VR.	
 \end{example}
 \begin{example}[Vektorräume aus Körpererweiterungen]
-	Sei $\K$ Körper. $L\subseteq \K$ heißt Unterkörper (auch Teilkörper) von $\K$. Man schreibt dann $L \leq \K$, sofern 
+	Sei $\K$ Körper. $L\subseteq \K$ heißt Unterkörper (auch Teilkörper) von $\K$. Man schreibt dann $L \leq \K$, sofern gilt:
+	\begin{itemize}
+		\item $0_{\K}, 1_{\K} \in L$
+		\item $\forall a,b \in L: a+b \in L$
+		\item $\forall a \in L: -a\in L$
+		\item $\forall a, b \in L: a\cdot b \in L$
+		\item $\forall a\in L\setminus\{0\}: a^{-1}\in L$
+	\end{itemize}
+	\note{abgeschlossen, inverses und neutrales Element}\\
+	Sei $L\leq \K$, dann $\K$-Vektorraum über $L$.
 \end{example}
+\subsection{Funktionenräume}
+\begin{definition}
+	Sei $\K$ Körper und $X$ Menge. Dann bildet $\K^X := \{f\mid f:X\to \K\}$ einen $\K$-VR mit folgenden Operationen:
+	\begin{itemize}
+		\item Addition: $(f+g)(x)=f(x)+g(x)$
+		\item Skalarmultiplikation $(\lambda f)(x)=\lambda f(x)$
+		\item Nullvektor $x\mapsto 0_{\K}$
+	\end{itemize}
+\end{definition}
+\begin{example}[Potenzmenge als $\Z$-Vektorraum]
+	Sei $A$ Menge. Dann bildet $\mathcal{P}(A)$ einen $\Z_2$-VR mit folgenden Operationen:
+	\begin{itemize}
+		\item Addition: $X+Y=(X\cup Y)\setminus(X\cap Y)$
+		\item Skalarmultiplikation
+		\item Nullvektor
+		\item Inverses bzgl. Addition
+	\end{itemize}
+\end{example}
+\begin{lemma}
+	Sei $V$ $\K$-VR, $v \in V$. Dann gilt:
+	\begin{enumerateroman}
+		\item $0v=0$
+		\item $(-1)v=-v$
+		\item $\lambda \in \K: \lambda v=0 \iff (\lambda=0)\lor (v=0)$
+	\end{enumerateroman}
+\end{lemma}
+
+
+
