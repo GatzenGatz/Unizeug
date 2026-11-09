@@ -373,7 +373,7 @@ Operationen in $\C$:
 	\item $\Re(z)=a$ Realteil
 	\item $\Im(z)=b$ Imaginärteil
 \end{itemize}
-Jede reelle Zahl $a\in\R$ ist als komplexe $a+0i\in\C$ zu versthen. Darum schreibt man $\R \subset \C$. Das heißt wir identifizieren die Menge $\R$ mit ihrem Bild unter der Injektion $\R\to\C,a\mapsto a+bi$.
+Jede reelle Zahl $a\in\R$ ist als komplexe $a+0i\in\C$ zu versthen. Darum schreibt man $\R \subset \C$. Das heißt man identifiziert die Menge $\R$ mit ihrem Bild unter der Injektion $\R\to\C,a\mapsto a+bi$.
 \section{Vektorräume} 
 \begin{definition}
 	Jeden Vektroräume liegt ein Körper $\K$ $(K,+,\cdot)$ zugrunde. Die Elemente von $\K$ heißen oft Skalare.
@@ -436,6 +436,77 @@ Sei $\K$ Körper und $n\in \N$. Die Menge $\K^n$ aller $n$-Tupel bildet einen $\
 		\item $\lambda \in \K: \lambda v=0 \iff (\lambda=0)\lor (v=0)$
 	\end{enumerateroman}
 \end{lemma}
-
-
+\prove
+\begin{enumerateroman}
+	\item \begin{align*}
+		0&= 0v-(0v)\\
+		&=(0+0)v-(0v)\\
+		&= 0v+0v-0v\\
+		&=0v
+	\end{align*}
+	\item \begin{align*}
+		0&=(1-1)v=v+(-1)v\\
+		-v=(-1)v
+	\end{align*}
+\end{enumerateroman}
+\begin{definition}
+	$V$ $\K$-VR. Eine Teilmenge $U\subseteq V$ heißt Untervektorraum (UVR) von $V$ und man schreibt $U\leq V$, wenn gilt:
+	\begin{enumerate}
+		\item $U\neq \emptyset$
+		\item $\forall u,v \in U: u+v \in U$
+		\item $\forall \lambda \in \K \forall u \in U: \lambda u \in U$
+	\end{enumerate}
+\end{definition}
+\begin{lemma}
+	$V$ $\K$-VR, $U\leq V$. Dann gilt:
+	\begin{enumerate}
+		\item $0_v\in U$
+		\item $\forall u \in U: -u \in U$
+		\item Skalarmutliplikation und Addition in $V$
+	\end{enumerate}
+\end{lemma}
+\prove Sei dem Leser überlassen
+\paragraph{Bemerkung} Für jeden Vektorraum $V$ (über einem beliebigen Körper) ist $V\leq V$ und $\{0\}\leq V$.
+\begin{example}
+	Sei $\K$ Körper.
+	\begin{enumerate}
+		\item Sei $n\in \N$ und $M\subseteq \{1,\dots, n\}$. Dann
+		\begin{align*}
+			\left\{\begin{array}{c}
+				a_1\\\dots\\a_n
+			\end{array}\mid \forall i \in M: a_i = 0\right\} \leq \K^n
+		\end{align*}
+		\item Sei $X$ beliebige Menge. Dann bildet die Menge $\K^X$ aller endlich getragenen Funktionen von $X$ nach $\K$ einen UVR des $\K$-VR $\K^X$
+	\end{enumerate}
+\end{example}
+\begin{lemma}
+	$V$ $\K$-VR. Sind $U_1$ und $U_2$ UVR von $V$, dann ist auch $U_1\cap U_2\leq V$.
+\end{lemma}
+\prove Sei dem Leser überlassen.
+\paragraph{Bemerkung} Allgemein gilt: Ist $M$ eine Menge von Untervektorräumen von $V$, dann ist auch $\bigcap M$ UVR von $V$.\\
+Unter Vereinigung kein UVR gegeben.
+\begin{definition}
+	$V$ $\K$-VR.
+\begin{enumerate}
+	\item 
+	\item 
+\end{enumerate}
+	\begin{enumerate}
+		\item Für $S, T\subseteq V$ sei $S+T:=\{u+v\mid u\in S, v\in T\}$ FÜr $v\in V$ sei $Kv:=\{\lambda v\mid \lambda \in \K\}$. Für $m, n\in \N, m\leq n, v_m , \dots , v_n \in V$ definiert man die Summe $\sum\limits_{i=m}^n v_i \in V$ mittels Rekursion. Für $m, n \in \N$ mit $m>n$ sei $\sum\limits_{i=m}^n v_i=0$
+		\item Für $n\in\N$, $v_1,\dots,v_n\in V$ und $\lambda_1,\dots,\lambda_n\in\K$ heißt
+		\begin{align*}
+			\sum\limits_{i=1}^n \lambda_iv_i= \lambda_1v_1+\dots+\lambda_nv_n
+		\end{align*}
+		eine Linearkombination der Vektoren. Für $S\subseteq V$ heißt $\mathrm{Lin}(S):=\mathrm{Lin}_V(S):=\{\sum\limits_{i=1}^n\lambda_iv_i\mid n \in \N, \lambda \in \K, v\in S\}$ die lineare Hülle von $S$ in $V$.\\ Spezialfall: $\mathrm{Lin}(\emptyset)=\{0\}$.
+		\item Eine Teilmenge $S \subseteq V$ heißt Erzeugendensystem des $\K$-VR $V$, wenn $V=\mathrm{Lin}(S)$.
+	\end{enumerate}
+\end{definition}
+\begin{theorem}
+	Sei $V$ $\K$-VR und $S\subseteq V$. Dann ist $\mathrm{Lin}_V(S)$ der kleinste $UVR$ von $V$, der S als Teilmenge enthält, d.h. 
+	\begin{enumerate}
+		\item $S\subseteq \mathrm{Lin}(S)\leq V$
+		\item $\forall U \leq V: S \subseteq U \implies \mathrm{Lin}(S) \subseteq U$
+	\end{enumerate}
+\end{theorem}
+\prove Sei dem Leser überlassen.
 
