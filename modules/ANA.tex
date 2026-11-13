@@ -221,7 +221,7 @@ Der Körper der komplexen Zahlen besitzt keine Ordnung, welche die Ordnungsaxiom
 \end{enumerateroman}
 \section{Folgen und Reihen}
 \begin{definition}[Zahlenfolge]
-	Eine Zahlenfolge ist eine Abbildung von $\N \to \C (\R)$ $n\mapsto a_n$. Jedem $n \in \N$ wird ein $a_n \in \C$ oder $a_n \in \R$ zugeordnet.
+	Eine Zahlenfolge ist eine Abbildung von $\N \to \C$ $n\mapsto a_n$. Jedem $n \in \N$ wird ein $a_n \in \C$ zugeordnet.
 \end{definition}
 $(a_n)_{n\in \N}$ oder $a_1, a_2, \dots$
 \begin{definition}
@@ -265,8 +265,10 @@ Also ist $a_n$ beschränkt.
 \begin{lemma}
 	Das Produkt einer beschränkten Folge $(a_n)$ mit einer Nullfolge $(b_n)$ ist eine Nullfolge.
 \end{lemma}
-\prove Sei $\epsilon >0$. Da $(a_n)$ beschränkt existiert $c>0$ mit $|a_n|<c$ für alle $n\in \N$. Da $(b_n)$ Nullfolge existiert zu $\tilde{\epsilon}=\frac{\epsilon}{c}$.\\
-$\implies |a_nb_n|<c|b_n|<\epsilon\implies a_n b_n \to 0$
+\prove Sei $\epsilon >0$. Da $(a_n)$ beschränkt existiert $c>0$ mit $|a_n|<c$ für alle $n\in \N$. Da $(b_n)$ Nullfolge existiert $\forall \epsilon > 0\ \tilde{\epsilon}=\frac{\epsilon}{c}: |b_n|<\tilde{\epsilon}$.
+\begin{align*}
+	\implies \forall \epsilon > 0\ |a_nb_n|<c|b_n|<c\frac{\epsilon}{c}=\epsilon\implies \lim\limits_{n\to\infty}a_n b_n \to 0
+\end{align*}
 \begin{theorem}
 	Seien $a_n \to a$ und $b_n \to b$ konvergente Folgen. Dann gilt:
 	\begin{itemize}
@@ -306,11 +308,12 @@ $\implies |a_nb_n|<c|b_n|<\epsilon\implies a_n b_n \to 0$
 	&\geq b-a-|b_n-b|-|a_n-a|>0 \iff b_n > a_n \text{\lightning}
 \end{align*}
 $\implies b\leq a$
+\subsection{Monotonie}
 \begin{definition}
 	Eine reele $(a_n)$ heißt:
 	\begin{enumerateroman}
-		\item monoton wachsend, falls $\forall n a_{n+1}\geq a_n$
-		\item monoton fallend, falls $\forall n a_{n+1}\leq a_n$
+		\item monoton wachsend, falls $\forall n\ a_{n+1}\geq a_n$
+		\item monoton fallend, falls $\forall n\ a_{n+1}\leq a_n$
 		\item monoton, falls monoton wachsend oder fallend
 		\item streng monoton, falls $>$ oder $<$
 	\end{enumerateroman}
@@ -318,4 +321,91 @@ $\implies b\leq a$
 \begin{theorem}
 	Jede monotone und beschränkte Zahlenfolge ist konvergent.
 \end{theorem}
+\prove Sei o.b.d.A $(a_n)$ monoton wachsend und beschränkt und $A$ die Menge der Folgenglieder von $(a_n)$. $A$ besitzt Supremum $a=\sup(A)$. Also $\forall \epsilon >0 \exists a_n\in A$ so, dass:
+\begin{align*}
+	a_n+\epsilon >a &\iff a-a_n < \epsilon\\
+	a \geq a_n \to a_n-a \leq 0 < \epsilon \\
+	\implies |a_n-a|< \epsilon
+\end{align*}
+Sei $n\geq n_0$. Da $(a_n)$ monoton wachsend folgt $a_{n_0}\leq a_n \leq a\implies |a-a_n|<\epsilon\implies a_n \to a$.
+\begin{example}[Heron-Verfahren]
+	Mit $a\geq 1$ definiert die nachfolgende Folge rekursiv:
+	\begin{align*}
+		x_1&=a\\
+		x_{k+1}&=\frac{x_k+\frac{a}{x_k}}{2}
+	\end{align*}
+	Fragen:
+	\begin{itemize}
+		\item[(i)] Konvergenz?
+		\item[(ii)] Wogegen?
+	\end{itemize}
+	\begin{itemize}
+		\item[(ii)] Angenommen $(x_k)$ konvergiert gegen $x$:
+		\begin{align*}
+			x=\frac{x+\frac{a}{x}}{2} \quad\text{(Fixpunkt)}\\
+			x^2=a\\
+			x=\sqrt{a}
+		\end{align*}
+		\item[[i)] Man zeige, dass $(x_k)$ monoton fallend und beschränkt.\\
+		Es gilt $x_k>0 \forall k \in \N^+$ und:
+		\begin{align*}
+			x_{k+1}^2-a&=\frac{x_k^2+\frac{a^2}{x_k^2}+2a}{4}-a\\
+			&=\frac{x_k^2+\frac{a^2}{x_k^2}-2a}{4}\\
+			&=\left(\frac{x_k-\frac{a}{x_k}}{2}\right)^2\geq 0
+			&\implies x_{k+1}^2\geq a \forall k \in \N^+
+		\end{align*}
+		Betrachte:
+		\begin{align*}
+			x_k-x_{k+1}&=x_k-\frac{x_k+\frac{a}{x_k}}{2}\\
+			&=\frac{x_k^2-a}{2x_k} \geq 0\\
+			&\implies x_k \geq x_{k+1}
+		\end{align*}
+		Also $(x_k)$ monoton fallend.
+	\end{itemize}
+\end{example}
+\begin{definition}[Eulersche Zahl]
+	\begin{align*}
+		e=\lim\limits_{n\to\infty} \left(1+\frac{1}{n}\right)^n
+	\end{align*}
+\end{definition}
+\begin{example}
+	Zinssatz
+\end{example}
+\subsection{Binomialkoeffizienten}
+\begin{definition}
+	\begin{align*}
+		z\in \C, k\in \N: \binom{n}{k}=\frac{\prod\limits_{z-k+1}^z}{k!}
+	\end{align*}
+\end{definition}
+\paragraph{Pascalsches Dreieck} \ 
+\begin{theorem}
+	Für $z\in \C, k\in \N$:
+	\begin{align*}
+		\binom{z}{k}+\binom{z}{k+1}=\binom{z+1}{k+1}
+	\end{align*}
+\end{theorem}
+\begin{theorem}[Binomischer Lehrsatz]
+	Für $a,b\in \C, n\in \N$:
+	\begin{align*}
+		(a+b)^n=\sum\limits_{k=0}^na^kb^{n-k}
+	\end{align*}
+\end{theorem}
+\begin{theorem}
+	Für alle $k\in \N$ und $z\in \C$ mit $|z|>1$ gilt:
+	\begin{align*}
+		\lim\limits_{n\to \infty} \frac{n^k}{z^n} = 0
+	\end{align*}
+\end{theorem}
+\prove Setze $x=|z|-1>0$. Dann gilt:\begin{align*}
+	|z|^n=(1+x)^n=\sum\limits_{i=0}^n\binom{n}{i}x^i
+\end{align*}
+Für $n>2k+1$ gilt daher:
+\begin{align*}
+	|z|^n&\geq \binom{n}{k+1}x^{k+1}\\
+	&\geq \left(\frac{n}{2}\right)^{k+1}\frac{x^{k+1}}{(k+1)!}\\
+	\implies |\frac{n^k}{z^n}|&\leq \frac{n^k}{\left(\frac{n}{2}\right)^{k+1}\frac{x^{k+1}}{(k+1)!}}\\
+	&=\frac{2^{k+1}(k+1)!}{nx^{k+1}}\to 0
+\end{align*}
+für $n\to \infty$.
+
 

@@ -72,20 +72,26 @@
 \contentsline {paragraph}{Beweis}{7}{paragraph*.45}%
 \contentsline {paragraph}{Beweis}{7}{paragraph*.46}%
 \contentsline {paragraph}{Beweis}{8}{paragraph*.47}%
-\contentsline {part}{Algorithmen, Datenstrukturen, Programmierung}{9}{part.3}%
+\contentsline {subsection}{\numberline {2.2}Monotonie}{8}{subsection.II.section.2.2}%
+\contentsline {paragraph}{Beweis}{8}{paragraph*.48}%
+\contentsline {subsection}{\numberline {2.3}Binomialkoeffizienten}{9}{subsection.II.section.2.3}%
+\contentsline {paragraph}{Pascalsches Dreieck}{9}{paragraph*.49}%
+\contentsline {paragraph}{Beweis}{10}{paragraph*.50}%
+\contentsline {part}{Algorithmen, Datenstrukturen, Programmierung}{11}{part.3}%
 \contentsline {part}{Technische Mechanik}{1}{part.4}%
 \contentsline {section}{\numberline {1}Statik}{1}{section.IV.section.1}%
-\contentsline {paragraph}{Rechte-Hand-Regel}{1}{paragraph*.48}%
-\contentsline {paragraph}{Drehmoment}{1}{paragraph*.49}%
-\contentsline {paragraph}{Gleichgewichte in der Statik}{1}{paragraph*.50}%
-\contentsline {paragraph}{Arten von Lagern}{1}{paragraph*.51}%
-\contentsline {paragraph}{Statisches Gleichgewicht}{1}{paragraph*.52}%
-\contentsline {paragraph}{Statische Bestimmtheit}{1}{paragraph*.53}%
+\contentsline {paragraph}{Rechte-Hand-Regel}{1}{paragraph*.51}%
+\contentsline {paragraph}{Drehmoment}{1}{paragraph*.52}%
+\contentsline {paragraph}{Gleichgewichte in der Statik}{1}{paragraph*.53}%
+\contentsline {paragraph}{Arten von Lagern}{1}{paragraph*.54}%
+\contentsline {paragraph}{Statisches Gleichgewicht}{1}{paragraph*.55}%
+\contentsline {paragraph}{Statische Bestimmtheit}{1}{paragraph*.56}%
 \contentsline {section}{\numberline {2}Festigkeitslehre}{1}{section.IV.section.2}%
 \contentsline {section}{\numberline {3}Dynamik}{1}{section.IV.section.3}%
 \contentsline {part}{Theoretische Physik}{2}{part.5}%
 \contentsline {section}{\numberline {1}Theoretische Mechanik}{1}{section.V.section.1}%
-\contentsline {paragraph}{Newtons Axiome}{1}{paragraph*.54}%
-\contentsline {paragraph}{Erhaltungssätze}{1}{paragraph*.55}%
+\contentsline {paragraph}{Newtons Axiome}{1}{paragraph*.57}%
+\contentsline {paragraph}{Erhaltungssätze}{1}{paragraph*.58}%
+\contentsline {paragraph}{Freiheitsgrade}{1}{paragraph*.59}%
 \contentsline {part}{Eingebettete Systeme}{2}{part.6}%
 \contentsfinish 
