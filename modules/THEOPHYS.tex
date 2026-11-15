@@ -1,7 +1,6 @@
 \section{Theoretische Mechanik}
-\begin{definition}[Bezugssystem]
-	Ort nur in Bezug auf einen anderen Ort
-\end{definition}
+\subsection{Grundlagen}
+Bezugssystem: Ort nur in Bezug auf einen anderen Ort\\
 Begriffe: Ortkoordinaten, Zeitkoordinate, Massepunkt\\
 Ziel: Berechnung der Bahnkurve
 \paragraph{Newtons Axiome}
@@ -11,13 +10,77 @@ Ziel: Berechnung der Bahnkurve
 	\item $\vec{F}=\odv{\vec{p}}{t}$
 	\item $F_{actio}0-F_{reactio}$
 \end{enumerate}
-\paragraph{Erhaltungssätze}
+
+\subsection{Erhaltungssätze}
 \begin{itemize}
 	\item Impulserhaltung $\odv{\vec{p}}{t}=0$
-	\item Drehimpulserhaltung $\odv{\vec{L}}{t}=\odv{}{t} (\vec{r}\times\vec{p})=0$
-	\item Energieerhaltungssatz: für konservative Kräfte ist Summe der Energien erhalten.
+	\item Drehimpulserhaltung $\odv{\vec{L}}{t}=\odv{}{t} (\vec{r}\times\vec{p})=0$\\
+	{\itshape\small (Speziallfall: für Zentralkräfte bleibt Drehimpuls erhalten)}
+	\item Energieerhaltungssatz: für konservative Kräfte ist Summe der Energien erhalten: 
+	\begin{align*}
+		T+U=\text{const.}
+	\end{align*}
 \end{itemize}
+Kinetische Energie:
 \begin{align*}
-	\vec{F}_{\text{kons}}=-\nabla U
+	T=\frac{m}{2}\dot{\vec{r}}^2
 \end{align*}
-\paragraph{Freiheitsgrade}
+Jeder konservativen Kraft liegt ein Potenzial $U(r)$ zugrunde.
+\begin{align*}
+	\vec{F}_{\text{kons}}\cdot \dot{\vec{r}}=-\odv{U}{t}
+\end{align*}
+
+\subsection{Potenzial}
+\begin{align*}
+	\vec{F}=-\nabla U(\vec{r})
+\end{align*}
+Äquipotentialflächen sind Flächen gleichen Potenzials.
+\paragraph{Vektordifferenzialoperatoren} \ \\
+Nabla-Operator:
+\begin{align*}
+	\nabla=\begin{array}{c}
+		\pdv{}{x}\\\pdv{}{y}\\\pdv{}{z}
+	\end{array}
+\end{align*}
+\begin{itemize}
+	\item Gradient:
+	\begin{align*}
+		\grad U(\vec{r})&=\nabla U(\vec{r})
+	\end{align*}
+	\begin{itemize}
+		\item Richtungsableitung des Skalarfeldes $U(\vec{r})$
+		\item Richtung des stärksten Wachstums
+		\item senkrecht zu Äquipotenzialflächen
+	\end{itemize}
+\end{itemize}
+
+\subsection{Freiheitsgrade}
+Anzahl an unabhängigen Koordinaten, die zur Bestimmung der Bewegung des Sytems benötigt werden.\\
+Sie werden eingeschränkt durch Nebenbedingungen (Reduktion der Freiheitsgrade):
+\begin{itemize}
+	\item holonome Nebenbedingungen:\\
+	\begin{align*}
+		\Phi(\vec{r_1},\dots, \vec{r_n},t)=\text{const.}
+	\end{align*}
+	\begin{align*}
+		\odv{\Phi}{t}&=\sum\limits_{k=1}^n\left(\pdv{\Phi}{x_k}\odv{x_k}{t}+\pdv{\Phi}{y_k}\odv{y_k}{t}+\pdv{\Phi}{z_k}\odv{z_k}{t}\right)+\pdv{\Phi}{t}\\
+		&=\sum\limits_{k=1}^n\grad_k\Phi\cdot\odv{\vec{r}}{t}+\pdv{\Phi}{t}=0
+	\end{align*}
+	\item nicht-holonome Nebenbedingungen: Ungleichungen, nicht-integrable DGLs
+	\item Skleronom: zeitunabhängig, Rheonome: zeitabhängig
+\end{itemize}
+
+\subsection{Wirkung}
+\paragraph{Prinzip der kleinsten Wirkung}\ \\
+Man ordnet jeder Bahnkurve $q(t)$ das Wirkungsfunktional
+\begin{align*}
+	S[q]=\int\limits_{t_1}^{t_2} \mathcal{L}(q,\dot{q},t)\odif{t}
+\end{align*}
+zu. Dabei ist $\mathcal{L}=T-U$, genannt die Lagrange-Funktion.\\
+Das Prinzip der kleinsten Wirkung (auch Hamilton'sches Prinzip) fordert eine Bahnkurve $q(t)$, für die die Wirkung $S$ ein Minimum darstellt.
+\begin{align*}
+	\delta S = 0
+\end{align*}
+\paragraph{Variationsrechnung}
+
+
