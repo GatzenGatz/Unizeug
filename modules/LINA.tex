@@ -538,7 +538,7 @@ Unter Vereinigung kein UVR gegeben.
 	\end{align*}
 	und $(v_1, \dots, v_n)$ heißt linear abhängig, falls nicht linear unabhängig. Eine Teilmenge $U\subseteq V$ heißt linear unabhänig, wenn jedes endliche Tupel paarweise verschiedener Elemeente aus $U$ linear unabhängig ist, d.h. $\forall n \in N \forall (v_i, \dots, v_n)\in U^n$:
 	\begin{align*}
-		\left(\forall i,j\in \{1,\dots,n\}: i\neq j\implies v_i\neq v_j\right) \implies \left((v_1,\dots, v_n) \text{linear unabhängig}\right)
+		\left(\forall i,j\in \{1,\dots,n\}: i\neq j\implies v_i\neq v_j\right) \implies \left((v_1,\dots, v_n) \text{ linear unabhängig}\right)
 	\end{align*}
 \end{definition}
 \paragraph{Bemerkung}
@@ -589,7 +589,26 @@ Rest sei dem Leser überlassen.
 \begin{theorem}[Charakterisierungssatz für Basen]
 	$V$ $K$-VR und $B\subseteq V$. Dann gilt:
 	\begin{enumerate}
-		\item `Basisergänzungssatz': Genau dann ist $B$ eine Basis von $V$, wenn $B$ maximale linear unabhängige Teilmenge von $V$ ist, d.h. $B$ linear unabhänig und $\forall \tilde{B}\subseteq V: B \not\subseteq\tilde{B}\implies \tilde{B}$ linear abhängig.
+		\item ``Basisergänzungssatz'': Genau dann ist $B$ eine Basis von $V$, wenn $B$ maximale linear unabhängige Teilmenge von $V$ ist, d.h. $B$ linear unabhänig und $\forall \tilde{B}\subseteq V: B \not\subseteq\tilde{B}\implies \tilde{B}$ linear abhängig.
+		\item ``Basisauswahlsatz'': Genau dann ist $B$ Basis von $V$, wenn $B$ minimales Erzeugendensystem von von $V$.
 	\end{enumerate}
-
+\end{theorem}
+\prove \ \\Sei $B$ Basis von $V$. Dann $B$ linear unabhängig. Sei $\tilde{B}\subseteq V$ mit $B\not\subseteq \tilde{B}$. Dann gibt es $v\in\tilde{B}\setminus B$. Da $\mathrm{Lin}_V(B)=V$, existieren $n\in \N$, $\lambda_i\in K$ und paarweise verschiedene $v_i\in B$ mit $\sum \lambda_iv_i= v$. Damit $v_1, \dots, v_n, v \in \tilde{B}$ paarweise verschieden, $\sum \lambda_iv_i+(-1)v=0$, also $\tilde{B}$ linear abhängig.\\
+Sei $B$ maximal linear unabhängig in $V$. Zu zeigen: $B$ Basis von $V$. Widerspruchsbeweis: Angenommen, $B$ keine Basis von $V$, d.h. $\mathrm{Lin}_V(B)\neq V$. Dann existiert $v\in V\setminus\mathrm{Lin}_V(B)$. Zeige $\tilde{B}:=B\cup \{v\}$ linear unabhängig. Seien $n\in \N$,$\lambda_1, \dots, \lambda_{i+1}\in K$ und $v_1, \dots, v_n \in B$ derart, dass $v_i$ paarweise verschieden und $\lambda_1v_1+\dots+\lambda_nv_n+\lambda_{n+1}v=0$. Wäre $\lambda_{n+1}\neq 0$, dann wäre $v$ Linearkombination der $v_i$ \lightning. Also $\lambda_{n+1}=0$ und daher $\tilde{B}$ linear unabhängig. Wenn $\tilde{B}$ linear unabhängig ist widerspricht das maximaler linearer Unabhängigkeit von $B$ \lightning
+\begin{theorem}
+	Jeder Vektorraum hat eine Basis.
+\end{theorem}
+\prove Sei $V$ $K$-VR.\\
+Speziallfall: Ist $V$ endlich erzeugt, d.h. $\exists S \subseteq V:$ $S$ endlich $\land$ $V=\mathrm{Lin}_V(S)$, dann enthält $S$ ein minimales Erzeugendenystem $B$ von $V$. Dann ist $B$ Basis von $V$. Allgemeiner Fall (nicht notwendigerweise endlich) benötigt Lemma von Zorn (äquivalent zum Auswahlaxiom).
+\paragraph{Bemerkung} $K$ endlicher Körper, $q:=|K|$. Hat ein $K$-VR $V$ eine Basis mit $n$ ELementen, dann  $|V|=|K^n|=|K|^n=q^n$, also hat jede Basis von $V$ genau $n$ Elemente. DIese Beobachtung lässt sich auf Vektorräume über beliebigen Körpern verallgmeinern.
+\begin{lemma}[Austauschlemma]
+	$V$ $K$-VR. Sei $(v_1,\dots,v_n)$ Basis von $V$, $\lambda_1, \dots, \lambda_n \in K$ und $w=\lambda_1v_1+\dots+\lambda_nv_n$. Dann lässt sich ein Element der Basis für das $\lambda_j\neq 0$ $v_j$ mit $w$ austauschen.
+\end{lemma}
+\prove Sei dem Leser überlassen
+\begin{theorem}[Austauschsatz von Steinitz]
+	Sei $V$ $K$-VR. Sei $B\subseteq V$ endliche Basis von $V$ und $n:=|B|$. Sei $C\subseteq V$ endlich und linear unabhängig, $m:=|C|$. Dann:
+	\begin{enumerateroman}
+	\item $|C|\leq |B|$, d. h. $m\leq n$
+	\item Es existieren paarweise verschiedene Vektoren $b_1, \dots, b_{n-m}\in B\setminus C$ derart, dass $C \cup {b_1, \dots, b_{n-m}}$ Basis von $V$ ist.
+	\end{enumerateroman}
 \end{theorem}
