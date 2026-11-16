@@ -497,15 +497,15 @@ Unter Vereinigung kein UVR gegeben.
 		\begin{align*}
 			\sum\limits_{i=1}^n \lambda_iv_i= \lambda_1v_1+\dots+\lambda_nv_n
 		\end{align*}
-		eine Linearkombination der Vektoren. Für $S\subseteq V$ heißt $\mathrm{Lin}(S):=\mathrm{Lin}_V(S):=\{\sum\limits_{i=1}^n\lambda_iv_i\mid n \in \N, \lambda \in \K, v\in S\}$ die lineare Hülle von $S$ in $V$.\\ Spezialfall: $\mathrm{Lin}(\emptyset)=\{0\}$.
-		\item Eine Teilmenge $S \subseteq V$ heißt Erzeugendensystem des $\K$-VR $V$, wenn $V=\mathrm{Lin}(S)$.
+		eine Linearkombination der Vektoren. Für $S\subseteq V$ heißt $\mathrm{Lin}_V(S):=\mathrm{Lin}_V(S):=\{\sum\limits_{i=1}^n\lambda_iv_i\mid n \in \N, \lambda \in \K, v\in S\}$ die lineare Hülle von $S$ in $V$.\\ Spezialfall: $\mathrm{Lin}_V(\emptyset)=\{0\}$.
+		\item Eine Teilmenge $S \subseteq V$ heißt Erzeugendensystem des $\K$-VR $V$, wenn $V=\mathrm{Lin}_V(S)$.
 	\end{enumerate}
 \end{definition}
 \begin{theorem}
 	Sei $V$ $\K$-VR und $S\subseteq V$. Dann ist $\mathrm{Lin}_V(S)$ der kleinste $UVR$ von $V$, der S als Teilmenge enthält, d.h. 
 	\begin{enumerate}
-		\item $S\subseteq \mathrm{Lin}(S)\leq V$
-		\item $\forall U \leq V: S \subseteq U \implies \mathrm{Lin}(S) \subseteq U$
+		\item $S\subseteq \mathrm{Lin}_V(S)\leq V$
+		\item $\forall U \leq V: S \subseteq U \implies \mathrm{Lin}_V(S) \subseteq U$
 	\end{enumerate}
 \end{theorem}
 \prove Sei dem Leser überlassen.
@@ -524,7 +524,7 @@ Unter Vereinigung kein UVR gegeben.
 \end{itemize}
 \prove 
 \begin{itemize}
-	\item (i) und (ii) nach oben. (iii): Sei $S\subseteq V$. Nach (i) ist $S\subseteq \mathrm{Lin}(S)$, also auch $\mathrm{Lin}(S)\subseteq \mathrm{Lin}(\mathrm{Lin}(S))$. Weiter ist $\mathrm{Lin}(S)\leq V$. Daher $\mathrm{Lin}(\mathrm{Lin}(S))\subseteq \mathrm{Lin}(S)$.
+	\item (i) und (ii) nach oben. (iii): Sei $S\subseteq V$. Nach (i) ist $S\subseteq \mathrm{Lin}_V(S)$, also auch $\mathrm{Lin}_V(S)\subseteq \mathrm{Lin}_V(\mathrm{Lin}_V(S))$. Weiter ist $\mathrm{Lin}_V(S)\leq V$. Daher $\mathrm{Lin}_V(\mathrm{Lin}_V(S))\subseteq \mathrm{Lin}_V(S)$.
 	\item Sei $S \subseteq V$ und $W:=\bigcap \{U\in \mathcal{P}(V)\mid S\subseteq U\leq V\}$. Zu zeigen $\mathrm{Lin}_V(S) = W$. $W\leq V$. Wegen $S\subseteq W$ also $\mathrm{Lin}_V(S)\subseteq W$. Da $S\subseteq \mathrm{Lin}_V(S)\leq V$, gilt auch $W\subseteq \mathrm{Lin}_V(S)$ 
 \end{itemize}
 \paragraph{Proposition} Sei $V$ $\K$-VR. Für alle $n\in N$ und $v_i\in V$ gilt:
@@ -582,5 +582,14 @@ Unter Vereinigung kein UVR gegeben.
 		\end{align*}
 		ist eine Bijektion und heißt der kanonische Basisisomorphismus bezüglich $B$.
 	\end{enumerate}
-	
+\end{theorem}
+\prove Sei $v\in V$. Da $\{v_1,\dots, v_n\}$ Erzeugendensystem von $V$, ist $V=\mathrm{Lin}_V(v_1,\dots,v_n)=Kv_1+\dots+Kv_n$. Also existieren $\lambda_1,\dots, \lambda_n \in K$ mit $v=\lambda_1v_1+\dots +\lambda_nv_n$.\\
+Rest sei dem Leser überlassen.
+\paragraph{Bemerkung} $K$ Körper, $n\in \N$. Dann $B=(e_1,\dots, e_n)$ mit Einheitsvektoren eine Basis des $K$-VRs $K^n$, die sogenannte Standardbasis. Für jedes $a=(\lambda_1,\dots,\lambda_n) \in K^n$ ist $a\in \mathrm{Lin}_{K^n}(e_1,\dots, e_n)$
+\begin{theorem}[Charakterisierungssatz für Basen]
+	$V$ $K$-VR und $B\subseteq V$. Dann gilt:
+	\begin{enumerate}
+		\item `Basisergänzungssatz': Genau dann ist $B$ eine Basis von $V$, wenn $B$ maximale linear unabhängige Teilmenge von $V$ ist, d.h. $B$ linear unabhänig und $\forall \tilde{B}\subseteq V: B \not\subseteq\tilde{B}\implies \tilde{B}$ linear abhängig.
+	\end{enumerate}
+
 \end{theorem}
