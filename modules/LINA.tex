@@ -509,4 +509,78 @@ Unter Vereinigung kein UVR gegeben.
 	\end{enumerate}
 \end{theorem}
 \prove Sei dem Leser überlassen.
-
+\paragraph{Bemerkung} $V$ $\K$-VR. Dann gilt:
+\begin{itemize}
+	\item Die Abbildung $\mathcal{P}\to\mathcal{P}, S \mapsto \mathrm{Lin}_V(S)$ ist ein Hüllenoperator, d.h. $\forall S,T\in \mathcal{P}$ gilt:
+	\begin{enumerate}
+		\item $S\subseteq \mathrm{Lin}_V(S)$ (Extensivität)
+		\item $S\subseteq T \implies \mathrm{Lin}_V(S)\subseteq\mathrm{Lin}_V(T)$ (Monotonie)
+		\item $\mathrm{Lin}_V(\mathrm{Lin}_V(S))=\mathrm{Lin}_V(S)$ (Idempotenz)
+	\end{enumerate}
+	\item Für jedes $S\subseteq V$ ist
+	\begin{align*}
+		\mathrm{Lin}_V(S)=\bigcap \{U\in \mathcal{P}(V)\mid S\subseteq U \leq V\}
+	\end{align*}
+\end{itemize}
+\prove 
+\begin{itemize}
+	\item (i) und (ii) nach oben. (iii): Sei $S\subseteq V$. Nach (i) ist $S\subseteq \mathrm{Lin}(S)$, also auch $\mathrm{Lin}(S)\subseteq \mathrm{Lin}(\mathrm{Lin}(S))$. Weiter ist $\mathrm{Lin}(S)\leq V$. Daher $\mathrm{Lin}(\mathrm{Lin}(S))\subseteq \mathrm{Lin}(S)$.
+	\item Sei $S \subseteq V$ und $W:=\bigcap \{U\in \mathcal{P}(V)\mid S\subseteq U\leq V\}$. Zu zeigen $\mathrm{Lin}_V(S) = W$. $W\leq V$. Wegen $S\subseteq W$ also $\mathrm{Lin}_V(S)\subseteq W$. Da $S\subseteq \mathrm{Lin}_V(S)\leq V$, gilt auch $W\subseteq \mathrm{Lin}_V(S)$ 
+\end{itemize}
+\paragraph{Proposition} Sei $V$ $\K$-VR. Für alle $n\in N$ und $v_i\in V$ gilt:
+\begin{align*}
+	\mathrm{Lin}_V(v_i)=\sum\K v_i
+\end{align*}
+\begin{definition}
+	$V$ $\K$-VR. Ein $n$-Tupel $(v_1,\dots, v_n)\in V^n$ heißt linear unabhängig, falls
+	\begin{align*}
+		\forall \lambda_1, \dots, \lambda_n \in \K: \lambda_1v_1+\dots +\lambda_nv_n=0\implies \lambda_1=\dots=\lambda_n =0
+	\end{align*}
+	und $(v_1, \dots, v_n)$ heißt linear abhängig, falls nicht linear unabhängig. Eine Teilmenge $U\subseteq V$ heißt linear unabhänig, wenn jedes endliche Tupel paarweise verschiedener Elemeente aus $U$ linear unabhängig ist, d.h. $\forall n \in N \forall (v_i, \dots, v_n)\in U^n$:
+	\begin{align*}
+		\left(\forall i,j\in \{1,\dots,n\}: i\neq j\implies v_i\neq v_j\right) \implies \left((v_1,\dots, v_n) \text{linear unabhängig}\right)
+	\end{align*}
+\end{definition}
+\paragraph{Bemerkung}
+\begin{itemize}
+	\item Ein Vektor $v\in V$ ist genau dann linear abhängig, wenn $v=0$.
+	\item Ein Tupel $(v_1,\dots, v_n)\in V^n$ mit $n\geq 2$ ist genau dann linear abhängig, wenn
+	\begin{align*}
+		\exists i \in \{1,\dots,n\} \exists \lambda_1,\dots,\lambda_{i-1},\lambda_{i+1},\dots, \lambda_n\in \K:\\ v_i = \lambda_1v_1+\dots + \lambda_{i-1}v_{i-1}+\lambda_{i+1}v_{i+1}+\dots + \dots \lambda_nv_n
+	\end{align*}
+	\item Ein Tupel $(v_1, \dots, v_n)\in V^n$ ist genau dann linear unabhängig, wenn $v_i$ paarweise verschieden und $\{v_1,\dots,v_n\}$ linear unabhängig.
+	\item Seien $U\subseteq \tilde{U}\subseteq V$. Dann gilt $\tilde{U}$ linear abhängig $\implies$ $U$ linear unabhängig. 
+\end{itemize}
+\begin{example}
+	Im $\R$-VR $\R^2$:
+	\begin{itemize}
+		\item $((0,1)^T, (1,0)^T)$ linear unabhängig.
+		\item $((1,2)^T, (2,4)^T)$ linear abhängig.
+		\item $((1,2)^T, (\pi, 2\pi)^T)$ linear abhängig im $\R$-VR $\R^2$, aber linear unabhängig im $Q$-VR $\R^2$.
+		\item Je drei Vektoren im $\R$-VR $\R^2$ sind linear abhängig
+	\end{itemize}
+\end{example}
+\section{Basen und Dimensionen}
+\begin{definition}
+	$V$ $K$-VR. Eine Teilmenge $B\subseteq V$ heißt Basis von $V$:
+	\begin{enumerateroman}
+	\item $B$ is linear unabhängig
+	\item $B$ ist Erzeugendensystem von $V$ ($\mathrm{Lin}_V(B)=V$)
+	\end{enumerateroman}
+	Ein Tupel $B=(v_1, \dots, v_n)\in V^n$ mit $n\in \N$ heißt geordnete Basis von $V$:
+	\begin{enumerate}
+		\item $v_1, \dots, v_n$ paarweise verschieden
+		\item $\{v_1, \dots, v_n\}$ Basis von $V$
+	\end{enumerate}
+\end{definition}
+\begin{theorem}[Eindeutigkeit der Basiskoordinaten]
+	$V$ $K$-VR, $B=(v_1,\dots, v_n)$ geordnete Basis von $V$. Dann:
+	\begin{enumerate}
+		\item Für jedes $v \in V$ existiert genau ein $n$-Tupel $(\lambda_1, \dots, \lambda_n)\in K^n$ mit $v=\sum\limits_{i=1}^n \lambda_iv_i$
+		\item Die Abbildung \begin{align*}
+			\Phi: K^n \to V, (\lambda_1,\dots, \lambda_n)\mapsto \lambda_1v_1+\dots + \lambda_nv_n
+		\end{align*}
+		ist eine Bijektion und heißt der kanonische Basisisomorphismus bezüglich $B$.
+	\end{enumerate}
+	
+\end{theorem}
