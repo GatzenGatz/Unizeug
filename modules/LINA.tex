@@ -627,5 +627,43 @@ Speziallfall: Ist $V$ endlich erzeugt, d.h. $\exists S \subseteq V:$ $S$ endlich
 	\item $\dim_K(V)=0\iff V=\{0\}$
 	\item Ist $U\leq V$, dann $\dim_K(U)\leq \dim_K(V)$ und für endliche Dimension $\dim_K(U)=\dim_K(V)\implies U=V$
 \end{enumerate}
+\begin{example}
+	$K$ Körper. Für jedes $n\in\N$ ist
+	\begin{align*}
+		\dim(K^n)=n
+	\end{align*}
+	denn bspw. die Standardbasis hat Mächtigkeit $n$
+\end{example}
+\begin{definition}
+	$V$ $K$-VR, $U_1, U_2 \leq V$. Dann heißt 
+	\begin{align*}
+		U_1+U_2=\{u+v\mid u\in U_1, v\in U_2\}
+	\end{align*}
+	die Summe von $U_1$ und $U_2$. Gilt $U_1\cap U_2 = \{0\}$, so schreibt man $U_1\oplus U_2:= U_1+U_2$ und nennt es direkte Summe. Falls $U_1\oplus U_2=V$, dann nennt man $U_1$ und $U_2$ komplementär (nicht eindeutig).
+\end{definition}
+\begin{theorem}
+	$V$ $K$-VR, $U_1,U_2\leq V$. Dann $U_1+U_2$ der kleinste UVR von $V$, der $U_1$ und $U_2$ enthält, d.h. $U_1+U_2=\mathrm{Lin}_V(U_1\cup U_2)$.
+\end{theorem}
+\prove beidseitige Teilmenge 
+\begin{theorem}{Dimensionssatz}
+	Sei $V$ $K$-VR. Sind $U_1, U_2 \leq V$ endlich dimensional, dann gilt\begin{align*}
+		\dim_K(U_1+U_2)=\dim_K(U_1)+\dim_K(U_2)-\dim_K(U_1\cap U_2)
+	\end{align*}
+\end{theorem}
+\prove Basis vom Schnitt erweitern, lineare Unabhängigkeit von extra Vektoren die nicht im Schnitt sind zeigen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
