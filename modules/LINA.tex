@@ -612,3 +612,20 @@ Speziallfall: Ist $V$ endlich erzeugt, d.h. $\exists S \subseteq V:$ $S$ endlich
 	\item Es existieren paarweise verschiedene Vektoren $b_1, \dots, b_{n-m}\in B\setminus C$ derart, dass $C \cup {b_1, \dots, b_{n-m}}$ Basis von $V$ ist.
 	\end{enumerateroman}
 \end{theorem}
+\prove induktiv 
+\paragraph{Folgerung} Sei $V$ $K$-VR, $B$ endliche Basis von $V$, $n:=|B|$.\begin{enumerate}
+	\item Alle Basen von $V$ haben gleiche Kardinalität
+	\item Jede linear unabhängige Teilmenge $C\subseteq V$ mit $|C|=n$ ist Basis von $V$.
+	\item Ist $U\leq V$, so hat jede Basis von $U$ höchstens $n$ Elemente und kann zu einer Basis von $V$ ergänzt werden.
+\end{enumerate}
+\begin{definition}
+		Sei $VV$ eine $K$-VR. Besitzt $V$ endliche Basis $B\subseteq V$, dann nennt man $\dim_K(V):=|B|$ die Dimension des $K$-VRs $V$. Falls $V$ keine endliche Basis besitzt, dann $\dim_K(V):=\infty$.
+\end{definition}
+\paragraph{Bemerkung} $V$ $K$-VR. Dann
+\begin{enumerate}
+	\item $\dim_K(V)$ ist wohldefiniert, d.h. Definition hängt nicht von der Wahl der Basis ab.
+	\item $\dim_K(V)=0\iff V=\{0\}$
+	\item Ist $U\leq V$, dann $\dim_K(U)\leq \dim_K(V)$ und für endliche Dimension $\dim_K(U)=\dim_K(V)\implies U=V$
+\end{enumerate}
+
+
