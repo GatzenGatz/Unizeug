@@ -29,7 +29,7 @@ Jeder konservativen Kraft liegt ein Potenzial $U(r)$ zugrunde.
 \begin{align*}
 	\vec{F}_{\text{kons}}\cdot \dot{\vec{r}}=-\odv{U}{t}
 \end{align*}
-
+Herleitung über das Arbeitsintegral, es gilt zwangsweise Wegunabhängigkeit
 \subsection{Potenzial}
 \begin{align*}
 	\vec{F}=-\nabla U(\vec{r})
@@ -96,7 +96,7 @@ Randwerte $y(x_1)=y_1$ $y(x_2)=y_2$ sind gegeben. Sei $\delta y = \epsilon \eta(
 \begin{align*}
 	J[y+\epsilon\eta]&=\int\limits_{x_1}^{x_2}F(y+\epsilon\eta, y'+\epsilon\eta', x)\odif{x}
 \end{align*}
-Ableiten nach $\epsilon$:
+Ableiten nach $\epsilon$ (und mit Leibnizregel für Parameterintegrale):
 \begin{align*}
 	\odv{}{\epsilon}\int\limits_{x_1}^{x_2}F(y+\epsilon\eta, y'+\epsilon\eta', x)\odif{x}
 	&=\int\limits_{x_1}^{x_2}\left(\pdv{F}{y}\odv{(y+\epsilon\eta)}{\epsilon}+\pdv{F}{y'}\odv{(y'+\epsilon\eta')}{\epsilon}\right)\odif{x}\\
@@ -118,7 +118,8 @@ Folglich
 \begin{align*}
 	0=\int\limits_{x_1}^{x_2}\left(\pdv{F}{y}-\odv{}{x}\pdv{F}{y'}\right)\eta(x)\odif{x}
 \end{align*}
-Euler-Lagrange-Gleichung
+Unter Nutzung des Fundamentallemma der Variationsrechnung erhält man:
+\paragraph{Euler-Lagrange-Gleichung}
 \begin{align*}
 	\pdv{F}{y}=\odv{}{x}\left(\pdv{F}{y'}\right)
 \end{align*}
@@ -136,7 +137,7 @@ Das Prinzip der kleinsten Wirkung (auch Hamilton'sches Prinzip) fordert eine Bah
 \end{align*}
 Lagrange-Gleichungen 2. Art (Euler-Lagrange-Gleichungen)
 \begin{align*}
-	\odv{}{t}\pdv{\mathcal{L}}{\dot{q}}=\pdv{\mathcal{L}}{q}
+	\odv{}{t}\left(\pdv{\mathcal{L}}{\dot{q}}\right)=\pdv{\mathcal{L}}{q}
 \end{align*}
 Verallgemeinerte Koordinaten $q_i$ für Freiheitsgrade $(i=1,\dots,f)$.\\
 Weiter werden $2f$ Anfangsbedingungen benötigt.
