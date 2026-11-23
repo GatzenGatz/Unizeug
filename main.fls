@@ -369,6 +369,10 @@ INPUT main.ptc
 INPUT ./modules/ANA.tex
 INPUT ./modules/ANA.tex
 INPUT modules/ANA.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
 INPUT ./main.ptc
 INPUT ./main.ptc
 INPUT main.ptc

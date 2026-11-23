@@ -403,9 +403,67 @@ Für $n>2k+1$ gilt daher:
 \begin{align*}
 	|z|^n&\geq \binom{n}{k+1}x^{k+1}\\
 	&\geq \left(\frac{n}{2}\right)^{k+1}\frac{x^{k+1}}{(k+1)!}\\
-	\implies |\frac{n^k}{z^n}|&\leq \frac{n^k}{\left(\frac{n}{2}\right)^{k+1}\frac{x^{k+1}}{(k+1)!}}\\
+	\implies \left|\frac{n^k}{z^n}\right|&\leq \frac{n^k}{\left(\frac{n}{2}\right)^{k+1}\frac{x^{k+1}}{(k+1)!}}\\
 	&=\frac{2^{k+1}(k+1)!}{nx^{k+1}}\to 0
 \end{align*}
 für $n\to \infty$.
+\begin{theorem}
+	\begin{align*}
+		\lim\limits_{n\to \infty}\sqrt[n]{n}=1
+	\end{align*}
+\end{theorem}
+\prove Mit $a_n=\sqrt[n]{n}-1$, zeige $a_n\to 0$. Es gilt $(a_n+1)^n=n$.
+\begin{align*}
+	n=(a_n+1)^n&=1+na_n+\binom{n}{2}a_n^2\\
+	&\geq 1+\frac{n(n-1)}{2}\\
+	\implies 
+	2(n-1)&\geq (n-1)na_n\\
+	a_n &\leq \frac{n}{2}
+\end{align*}
+\begin{theorem}
+	Die Folge $a_n=\left(1+\frac{1}{n}\right)^k$ und $b_n=\left(1+\frac{1}{n}\right)^{k+1}$ bilden eine Intervallschachtellung $I_n=[a_n,b_n]$. Der Grenzwert $\lim a_n=\lim b_n=\bigcap I_n=\{e\}$ 
+\end{theorem}
+\prove $a_n<b_n$
+\begin{itemize}
+	\item Zeige $a_n$ monoton wachsend
+	\begin{align*}
+		1&\leq \frac{a_{n+1}}{a_n}\\
+		&=\frac{(n+2)^{k+1}n^n}{(n+1)^{2n+1}}\\
+		&=\frac{n+1}{n}\frac{(n^2+2n)^{k+1}}{(n^2+2n+1)^{k+1}}\\
+		&=\frac{n+1}{n}\left(1-\frac{1}{(n+1)^2}\right)^{n+1}
+	\end{align*}
+	Bernoulli Ungleichung
+	\begin{align*}
+		\left(1-\frac{1}{(n+1)^2}\right)&\geq \frac{n+1}{n}\left(1+(n+1)\left(-\frac{1}{(n+1)^2}\right)\right)\\
+		=\frac{n+1}{n}(1-\frac{1}{n+1})=1
+	\end{align*}
+	\item Zeige $b_n$ monoton fallend analog
+\end{itemize}
+$\implies I_{n+1}\subseteq I_n$\\
+Bleibt zu zeigen $0<b_n-a_n\to 0$. 
+\paragraph{Bemerkung} Für $\lim\limits_{n\to\infty}=\left(1+\frac{x}{n}\right)^n$. Substituiere $\frac{1}{m}=\frac{x}{n}$. Nur definiert für $x\in\Q$ bis jetzt.
+\subsection{Teilfolgen und Cauchyfolgen}
+\begin{definition}
+	Sei $(n_k)$ eine streng monotn wachsende Folge natürlicher Zahlen. Dann heißt $(x_{n_k})$ Teilfolge der Folge $(x_n)$. Ist $(x_{n_k})$ konvergent, so heißt der Grenzwert der Teilfolge Häufungspunkt der Folge.
+\end{definition}
+\begin{theorem}
+	Eine Zahl $a$ ist genau dann Häufungspunkt der Zahlenfolge $(a_n)$ wenn in jeder $\epsilon$-Umgebung unendlich viele Folgenglieder liegen.
+\end{theorem}
+\prove Angenommen $a$ Häufungspunkt von $(a_n)$. Teilfolge konvergiert gegen $a$ $\implies$ unendlich viele $a_{n_k}$ in $\epsilon$-Umgebung.\\ Weiter angenommen jede $\epsilon$-Umgebung enthält unendlich viele $a_n$. Man konstruiert rekursiv eine Teilfolge $(a_{n_k})$ Mit $a_{n_k}\to a$. Setze $n_0=1$ und wähle zu $\epsilon =\frac{1}{k}$ ein $n_k$ mit $n_k>n_{k+1}$ und $|a_{n_k}-a|<\frac{1}{k}$ $\implies$ $a_{n_k}$ ist Teilfolge und $a_{n_k}\to a$ $\implies$ $a$ ist Häufungspunkt. 
+\begin{theorem}[Bolzano-Weierstrass]
+	Jede beschränkte Folge hat einen Häufungspunkt.
+\end{theorem}
+\prove O.B.d.A Sei $(X_k)\subset [a_0,b_0]=I_0$ eine beschränkte Zahlenfolge. Man definiert rekursiv eine Intervallschachtelung
+\begin{align*}
+	I_{n+1}=\begin{cases}
+		[a_n,m]& \text{falls $x_k\in [a_n,m]$ für unendlich viele $x_k$}\\
+		[m, b_n]& \text{sonst}
+	\end{cases}
+\end{align*}
+wobei $m=\frac{a_n+b_n}{2}$. Dann gilt $I_{n+1}\subset I_n$ und $b_n-a_n\to 0$. Deshalb $\{x\}=\bigcap I_n$. Dann $\epsilon$-Umgebung für Häufungspunkt.
+
+
+
+
 
 
