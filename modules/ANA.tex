@@ -444,7 +444,7 @@ Bleibt zu zeigen $0<b_n-a_n\to 0$.
 \paragraph{Bemerkung} Für $\lim\limits_{n\to\infty}=\left(1+\frac{x}{n}\right)^n$. Substituiere $\frac{1}{m}=\frac{x}{n}$. Nur definiert für $x\in\Q$ bis jetzt.
 \subsection{Teilfolgen und Cauchyfolgen}
 \begin{definition}
-	Sei $(n_k)$ eine streng monotn wachsende Folge natürlicher Zahlen. Dann heißt $(x_{n_k})$ Teilfolge der Folge $(x_n)$. Ist $(x_{n_k})$ konvergent, so heißt der Grenzwert der Teilfolge Häufungspunkt der Folge.
+	Sei $(n_k)$ eine streng monoton wachsende Folge natürlicher Zahlen. Dann heißt $(x_{n_k})$ Teilfolge der Folge $(x_n)$. Ist $(x_{n_k})$ konvergent, so heißt der Grenzwert der Teilfolge Häufungspunkt der Folge.
 \end{definition}
 \begin{theorem}
 	Eine Zahl $a$ ist genau dann Häufungspunkt der Zahlenfolge $(a_n)$ wenn in jeder $\epsilon$-Umgebung unendlich viele Folgenglieder liegen.
@@ -460,7 +460,7 @@ Bleibt zu zeigen $0<b_n-a_n\to 0$.
 		[m, b_n]& \text{sonst}
 	\end{cases}
 \end{align*}
-wobei $m=\frac{a_n+b_n}{2}$. Dann gilt $I_{n+1}\subset I_n$ und $b_n-a_n\to 0$. Deshalb $\{x\}=\bigcap I_n$. Dann $\epsilon$-Umgebung für Häufungspunkt.
+wobei $m=\frac{a_n+b_n}{2}$. Dann gilt $I_{n+1}\subset I_n$ und $b_n-a_n\to 0$. Deshalb $\{x\}=\bigcap I_n$. Dann $\epsilon$-Umgebung für Häufungspunkt: $\forall \epsilon > 0 \exists n: |b_n-a_n|<\epsilon \overset{x\in I_n}{\implies} I_n = [a_n,b_n] \subset (x-\epsilon,x+\epsilon) = U_{\epsilon}(x)$. Da unendlich viele $x_k \in I_n$ auch unendlich viele $x_k \in U_{\epsilon}(x)$.
 
 
 
