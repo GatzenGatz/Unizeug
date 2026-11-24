@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  24 NOV 2026 12:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.12)  24 NOV 2026 13:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,4 +792,307 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 12.
- (/usr/share/texlive/texm
+ (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+\c@ttl@toc@modules/LINA.tex=\count377
+ (./main.ptc) [2
+
+
+
+] (./modules/LINA.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 	\item P
+             otenzmenge von $A$: $\mathcal{P}(A) := \{C\mid C\subset A\}$ [1
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \end{align*}
+                  [2] [3] [4] [5] [6]
+Overfull \hbox (11.91545pt too wide) in paragraph at lines 271--273
+\T1/cmr/m/n/12 Eine zum Vor-he-ri-gen ana-lo-ge Be-schrei-bung sur-jek-ti-ver Ab-bil-dun-gen (die man in der ZF-Axiomatik
+ []
+
+[7] [8] [9]
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 381.
+
+[10] [11] [12] [13] [14] [15]
+Overfull \hbox (16.00471pt too wide) in paragraph at lines 629--630
+[]\T1/cmr/m/n/12 Ist $\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 V$\T1/cmr/m/n/12 , dann $[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^T [][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 und f�r end-li-che Di-men-si-on $[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ) = [][](\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 )  =[]\OMS/cmsy/m/n/12 )
+ []
+
+[16]) [17] [18]
+\c@ttl@toc@modules/ANA.tex=\count378
+ (./main.ptc) [19
+
+
+] (./modules/ANA.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \end{definition}
+                      [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \end{itemize}
+                   [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.128 \end{theorem}
+                    [3]
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 \end{theorem}
+                    [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225 \end{definition}
+                       [5]
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \end{lemma}
+                  [6]
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 \subsection{Monotonie}
+                             [7]
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.365 \end{example}
+                    [8]
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \end{theorem}
+                    [9]
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.434 	\end{align*}
+                    [10]
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.466 \end{definition}
+                       [11]
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.506 \end{theorem}
+                    [12]
+Overfull \hbox (1.31044pt too wide) in paragraph at lines 507--515
+[] []\T1/cmr/bx/n/12 Be-weis[] \T1/cmr/m/n/12 Nach Bolzano-Weierstrass ist $\OML/cmm/m/it/12 H \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ;$ \T1/cmr/m/n/12 und be-schr�nkt. Man zeigt, dass $\OML/cmm/m/it/12 a \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (13.37343pt too wide) in paragraph at lines 516--518
+\T1/cmr/m/n/12 Beim Rech-nen sind fol-gen-de un-be-stim-me Aus-dr�cke zu be-ach-ten: $\OMS/cmsy/m/n/12 1 ^^@ 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^A 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0[]\OML/cmm/m/it/12 ; []; \OMS/cmsy/m/n/12 1[]\OML/cmm/m/it/12 ; []; [] $ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 ...sis}{Prof. Ralf Hielscher, Gunter Semmler}
+                                                   [13]
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 ...n, Programmierung}{Prof. Bastian Pfleging}
+                                                   [14]
+\c@ttl@toc@modules/ALDAP.tex=\count379
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 ...n, Programmierung}{Prof. Bastian Pfleging}
+                                                   [15
+
+
+] (./modules/ALDAP.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ... Römer, Thomas Krüger, Florian Tuschner}
+                                                   [1
+
+]
+\c@ttl@toc@modules/TM.tex=\count380
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ... Römer, Thomas Krüger, Florian Tuschner}
+                                                   [2
+
+
+] (./modules/TM.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmr/m/n/12 verschiebbare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\T1/cmr/m/n/12 Ge-len-k-la-ger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\T1/cmr/m/n/12 ver-schieb-ba-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\T1/cmr/m/n/12 Par-al-lel-f�h-
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 22--22
+[]|\T1/cmr/m/n/12 festes Ge-len-k-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmr/m/n/12 starre Ein-
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ... Römer, Thomas Krüger, Florian Tuschner}
+                                                   [1
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ... Römer, Thomas Krüger, Florian Tuschner}
+                                                   [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...ik}{Prof. Jens Kortus, Cameliu Himcinschi}
+                                                   [3]
+\c@ttl@toc@modules/THEOPHYS.tex=\count381
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...ik}{Prof. Jens Kortus, Cameliu Himcinschi}
+                                                   [4
+
+
+] (./modules/THEOPHYS.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 		\item R
+              ichtung des stärksten Wachstums [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \begin{align*}
+                    [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \end{align*}
+                   [3])
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...ik}{Prof. Jens Kortus, Cameliu Himcinschi}
+                                                   [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 ...Eingebettete Systeme}{Prof. Sebastian Zug}
+                                                   [5]
+\c@ttl@toc@modules/ES.tex=\count382
+ (./main.ptc)
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 ...Eingebettete Systeme}{Prof. Sebastian Zug}
+                                                   [6
+
+
+] (./modules/ES.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 ...Eingebettete Systeme}{Prof. Sebastian Zug}
+                                                   [1
+
+]
+\tf@ptc=\write6
+\openout6 = `main.ptc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 \end{document}
+                    [2] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 03683AAB8492D92ED3F02E6A5259B037;7030.
+ ) 
+Here is how much of TeX's memory you used:
+ 36601 strings out of 467363
+ 816767 string characters out of 5419000
+ 1263272 words of memory out of 6000000
+ 64819 multiletter control sequences out of 15000+600000
+ 645495 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 138i,20n,135p,865b,1449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on main.pdf (50 pages, 470304 bytes).
+PDF statistics:
+ 894 PDF objects out of 1000 (max. 8388607)
+ 783 compressed objects within 8 object streams
+ 342 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+
