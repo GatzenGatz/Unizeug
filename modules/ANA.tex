@@ -248,7 +248,7 @@ Nullfolge
 \begin{definition}
 	Sei $\epsilon>0$. Die Menge $U_{\epsilon}=\{z\in \C\mid |z-a| < \epsilon\}$ heißt $\epsilon$-Umgebung von $a$.
 \end{definition}
-\paragraph{Bemerkung} $\epsilon$-Umgebung, fast alle enthalten
+\paragraph{Bemerkung} $\epsilon$-Umgebung fast alle enthalten
 \begin{theorem}
 	Der Grenzwert einer konvergenten Zahlenfolge ist eindeutig.
 \end{theorem}
@@ -310,7 +310,7 @@ Also ist $a_n$ beschränkt.
 $\implies b\leq a$
 \subsection{Monotonie}
 \begin{definition}
-	Eine reele $(a_n)$ heißt:
+	Eine reelle Folge $(a_n)$ heißt:
 	\begin{enumerateroman}
 		\item monoton wachsend, falls $\forall n\ a_{n+1}\geq a_n$
 		\item monoton fallend, falls $\forall n\ a_{n+1}\leq a_n$
@@ -418,7 +418,7 @@ für $n\to \infty$.
 	&\geq 1+\frac{n(n-1)}{2}\\
 	\implies 
 	2(n-1)&\geq (n-1)na_n\\
-	a_n &\leq \frac{n}{2}
+	a_n &\leq \frac{2}{n}
 \end{align*}
 \begin{theorem}
 	Die Folge $a_n=\left(1+\frac{1}{n}\right)^k$ und $b_n=\left(1+\frac{1}{n}\right)^{k+1}$ bilden eine Intervallschachtellung $I_n=[a_n,b_n]$. Der Grenzwert $\lim a_n=\lim b_n=\bigcap I_n=\{e\}$ 
@@ -461,9 +461,79 @@ Bleibt zu zeigen $0<b_n-a_n\to 0$.
 	\end{cases}
 \end{align*}
 wobei $m=\frac{a_n+b_n}{2}$. Dann gilt $I_{n+1}\subset I_n$ und $b_n-a_n\to 0$. Deshalb $\{x\}=\bigcap I_n$. Dann $\epsilon$-Umgebung für Häufungspunkt: $\forall \epsilon > 0 \exists n: |b_n-a_n|<\epsilon \overset{x\in I_n}{\implies} I_n = [a_n,b_n] \subset (x-\epsilon,x+\epsilon) = U_{\epsilon}(x)$. Da unendlich viele $x_k \in I_n$ auch unendlich viele $x_k \in U_{\epsilon}(x)$.
-
-
-
-
-
-
+\begin{definition}
+	Eine Folge $(a_n)$ heißt Cauchy-Folge, falls $\forall \epsilon > 0 \exists n_0 \in \N \forall n,m \geq n_0: |a_n-a_m|<\epsilon$.
+\end{definition}
+\begin{theorem}
+	Eine Folge $(a_n)$ ist genau dann konvergent, falls sie Cauchy-Folge ist.
+\end{theorem}
+\prove 
+\begin{itemize}
+	\item[$\Rightarrow$] Sei $\epsilon >0$. Da $a_n \to a$ $\exists n_0 \N$ so, dass $\forall n \geq n_0: |a_n-a|<\frac{\epsilon}{2}$.
+	\begin{align*}
+		|a_n-a_m|&=|a_n-a+a-a_m|\\
+		&\leq |a_n-a|+|a_m-a|\\
+		&< \frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon
+	\end{align*} 
+	$\implies$ $(a_n)$ ist Cauchy-Folge.
+	\item[$\Leftarrow$] $\forall \epsilon >0 \exists n_0 n\geq n_0: |a_n-a_{n_0}|<\epsilon$, also $\forall n \geq n_0: |a_n| < |a_{n_0}| +\epsilon$, also $(a_n)$ beschränkt.\\
+	Nach Satz von Bolzano-Weierstrass $\exists a \in \C$ und eine Teilfolge $(a_{n_k})$ mit $a_{n_k}\to a$. Bleibt für alle $a_n$ zu zeigen.\\
+	Sei $\epsilon > 0$ und $n_0\in \N$ so, dass $\forall n,m \geq n_0: |a_n-a_m|<\frac{\epsilon}{2}$ und $\forall n_k \geq n_0: |a_{n_k}-a|<\frac{\epsilon}{2}$. Dann gilt $\forall n, n_k\geq n_0$
+	\begin{align*}
+		|a_n-a|&\leq |a_n-a_{n_k}|+|a_{n_k}-a|\\
+		&< \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+	\end{align*}
+	$\implies a_n \to a$. 
+\end{itemize}
+\begin{definition}
+	Sei $(a_n)$ eine reelle Zahlenfolge und $H$ die Menge ihrer Häufungspunkte. Dann heißt
+	\begin{align*}
+		\varlimsup\limits_{n\to \infty}a_n = \limsup\limits_{n\to \infty} a_n =\begin{cases}
+			\sup H& \text{falls $H$ nach oben beschränkt}\\
+			\infty& \text{sonst}
+		\end{cases}\\
+		\varliminf\limits_{n\to \infty}a_n = \liminf\limits_{n\to \infty} a_n =\begin{cases}
+			\inf H& \text{falls $H$ nach unten beschränkt}\\
+			-\infty& \text{sonst}
+		\end{cases}
+	\end{align*}
+\end{definition}
+\begin{align*}
+		\sup a_n \geq \lim\sup a_n
+	\end{align*}
+\begin{theorem}
+	Sei $(a_n)$ eine beschränkte Zahlenfolge. Dann ist $\limsup a_n$ der größte und $\liminf a_n$ der kleinste Häufungspunkt von $a_n$.
+\end{theorem}
+\prove Nach Bolzano-Weierstrass ist $H\neq \emptyset$ und beschränkt. Man zeigt, dass $a=\limsup a_n=\sup H$ ebenfalls HP ist. Da $a$ Supremum von $H$ $\forall \epsilon > 0 \exists \tilde{a} \in H$ mit $a-\frac{\epsilon}{2}<\tilde{a} \leq a$. Da $\tilde{a}$ HP von $(a_n)$ liegen in $U_{\frac{\epsilon}{2}}(\tilde{a})$ unendlich viele Folgenglieder von $(a_n)$ $\implies$ $U_{\epsilon}(a)$ enthält unendlich viele Folgenglieder von $(a_n)$ $\implies$ $a$ ist HP von $(a_n)$.
+\begin{definition}
+	Eine Folge $(a_n)$ heißt bestimmt divergent gegen
+	\begin{align*}
+		+\infty &\iff \forall c \exists n_0 \in \N: \forall n\geq n_0\ a_n >c\\
+-\infty &\iff \forall c \exists n_0 \in \N: \forall n\geq n_0\ a_n <c\\
+\infty &\iff \forall c \exists n_0 \in \N: \forall n\geq n_0\ |a_n|>c
+	\end{align*}
+\end{definition}
+\paragraph{Bemerkung} Ist $a_n \to \infty$ und $(b_n)$ beschränkt, so gilt $a_n+b_n\to \infty$.\\
+Beim Rechnen sind folgende unbestimme Ausdrücke zu beachten: $\infty-\infty, 0\cdot \infty, 1^{\infty}, 0^0, \frac{\infty}{\infty}, \infty^0, \frac{0}{0}, \dots$
+\subsection{Zahlenreihen}
+\begin{definition}
+	Sei $(a_n)$ eine Zahlenfolge. Dann heißt $s_n = \sum\limits_{k=1}^n a_k$ die zugehörige Folge von Partialsummen. Ist $(s_n)$ konvergent bzw. bestimmt divergent, so schreibt man $\sum\limits_{k=1}^{\infty}=\lim\limits_{n\to \infty}s_n$.
+\end{definition}
+\begin{example}
+	$a_k=(-1)^k$ nicht konvergent und nicht bestimmt divergent
+\end{example}
+\begin{example}
+	$\sum\limits_{k=2}^{\infty}\frac{1}{k(k-1)}$\\
+	Partialsummen betrachten
+\end{example}
+\paragraph{Bemerkung} Partialbruchzerlegung\\
+\begin{align*}
+	\frac{C+Dx}{(x-a)(x-b)}=\frac{A}{x-a}+\frac{B}{x-b}\\
+	\implies A+B= D, -Ab-Ba=C
+\end{align*}
+\begin{example}[Harmonische Reihe]
+	\begin{align*}
+		\sum\limits_{k=1}^{\infty}\frac{1}{k}
+	\end{align*}
+	Partialsummen $2^n$ größer als $\frac{1}{2}$ jeweils 
+\end{example}
