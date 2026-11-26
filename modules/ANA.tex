@@ -537,3 +537,26 @@ Beim Rechnen sind folgende unbestimme Ausdrücke zu beachten: $\infty-\infty, 0\
 	\end{align*}
 	Partialsummen $2^n$ größer als $\frac{1}{2}$ jeweils 
 \end{example}
+\begin{theorem}[Cauchysches Konvergenzkriterium]
+	Die Reihe $\sum a_k$ ist konvergent genau dann wenn
+	\begin{align*}
+		\forall \epsilon >0 \exists n_0\in \N: \forall n \geq m\geq n_0: \left|\sum\limits_{k=m}^n a_k\right|< \epsilon
+	\end{align*}
+\end{theorem}
+\prove Folge der Partialsummen ist konvergent $\iff$ $(s_n)$ ist Cauchyfolge $\iff$ $\forall \epsilon > 0 \exists n_0 \in \N: \forall n \geq m \geq n_0: |s_n-s_m| < \epsilon$ $\iff$ $\forall \epsilon > 0 \exists n_0 \in \N: \forall n \geq m \geq n_0:$
+\begin{align*}
+	\left|\sum\limits_{k=1}^n a_k - \sum\limits_{k=1}^m a_k\right| = \left|\sum\limits_{k=m+1}^n a_k\right| < \epsilon
+\end{align*}
+Für $n=m+1$:
+\begin{align*}
+	\left|\sum a_k\right|=|a_n|<\epsilon
+\end{align*}
+$a_k \to 0$ ist notwendige nicht hinreichende Bedingung, dass $\sum a_k$ konvergent
+\begin{theorem}[Majorantenkriterium]
+	Ist $\sum\limits_{k=1}^{\infty} b_k$ eine konvergente Reihe und $|a_k\leq |b_k|$ für fast alle $k$, dann ist auch $\sum\limits_{k=1}^{\infty}a_k$ konvergent.
+\end{theorem}
+\prove Da $\sum\limits_{k=1}^{\infty}$ konvergent, gilt 
+\begin{align*}
+	\forall \epsilon > 0 \exists n_0 \in \N: \forall n \geq m \geq n_0: \sum\limits_{k=1}^{\infty} b_k = _m < \epsilon
+\end{align*}
+Zu zeigen
