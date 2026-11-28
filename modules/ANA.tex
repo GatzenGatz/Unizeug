@@ -553,10 +553,19 @@ Für $n=m+1$:
 \end{align*}
 $a_k \to 0$ ist notwendige nicht hinreichende Bedingung, dass $\sum a_k$ konvergent
 \begin{theorem}[Majorantenkriterium]
-	Ist $\sum\limits_{k=1}^{\infty} b_k$ eine konvergente Reihe und $|a_k\leq |b_k|$ für fast alle $k$, dann ist auch $\sum\limits_{k=1}^{\infty}a_k$ konvergent.
+	Ist $\sum\limits_{k=1}^{\infty} b_k$ eine konvergente Reihe und $|a_k|\leq b_k$ für fast alle $k$, dann ist auch $\sum\limits_{k=1}^{\infty}a_k$ konvergent.
 \end{theorem}
-\prove Da $\sum\limits_{k=1}^{\infty}$ konvergent, gilt 
+\prove Da $\sum\limits_{k=1}^{\infty}b_k$ konvergent, gilt 
 \begin{align*}
-	\forall \epsilon > 0 \exists n_0 \in \N: \forall n \geq m \geq n_0: \sum\limits_{k=1}^{\infty} b_k = _m < \epsilon
+	\forall \epsilon > 0 \exists n_0 \in \N: \forall n \geq m \geq n_0: \sum\limits_{k=m}^{m} b_k = b_m < \epsilon
 \end{align*}
-Zu zeigen
+Zu zeigen $s_n:= \sum\limits_{k=1}^n a_k$ ist auch Cauchyfolge:
+\begin{align*}
+	|s_n-s_{m-1}|&=|\sum\limits_{k=m}^n a_k|\\&\leq \sum\limits_{k=m}^n |a_k|\\
+	&\leq \sum\limits_{k=m}^n b_k < \epsilon
+\end{align*} 
+
+
+
+
+
